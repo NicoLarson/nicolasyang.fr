@@ -1,0 +1,262 @@
+/*theme*/
+@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+:root {
+  --color-primary: #ff5f52;
+  --color-primaty-dark: #8e0000;
+  --color-white: #ffffff;
+  --color-white-secondary: #6d6d6d;
+  --color-dark: #c7c7c7;
+  --color-dark-secondary: #1b1b1b;
+  --color-font: black;
+  --color-font-secondary: white;
+  --color-valid: green;
+  --color-danger: red;
+}
+h2 {
+  font-size: 2rem;
+}
+/*nav*/
+header {
+  background-color: var(--color-white);
+  width: 100%;
+}
+header nav ul {
+  display: block;
+  background-color: var(--color-white);
+  text-align: center;
+  width: 100%;
+}
+header h1 {
+  font-family: "Spartan", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 1.5rem;
+}
+header nav ul li {
+  display: inline-block;
+  padding: 1rem;
+}
+header nav ul li a {
+  padding: 1rem;
+  width: 100%;
+  text-decoration: none;
+}
+/*welcome section*/
+#welcome {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 24rem;
+  margin: 0;
+  border-top: solid 1px var(--color-dark);
+}
+#welcome dt {
+  letter-spacing: 0.08rem;
+  padding: 4rem 0 0 4rem;
+  font-size: 2rem;
+  line-height: 4rem;
+  font-weight: bolder;
+}
+#welcome dl dd {
+  padding: 2rem 0 0 4rem;
+  font-size: 1.6rem;
+}
+#welcome img {
+  padding-top: 2rem;
+  width: 16.5rem;
+}
+/*skills section*/
+#skills {
+  display: inline-block;
+  border-top: solid 1px var(--color-dark);
+  background-color: var(--color-white);
+  width: 100%;
+  padding: 4rem;
+}
+.listTitle {
+  font-size: 1.618rem;
+  font-weight: bold;
+}
+.listTitle > a {
+  display: block;
+
+  text-decoration: underline;
+}
+#skills ul {
+  padding: 0.944rem 4rem;
+  text-align: center;
+}
+#skills ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 0.944rem;
+}
+#skills ul li i {
+  font-size: 6.472rem;
+}
+/*portfolio section*/
+#portfolio {
+  display: table;
+  margin: 0 auto;
+  padding: 4rem;
+  border-top: solid 1px var(--color-dark);
+}
+#portfolio ul {
+  padding: 0.944rem;
+}
+#portfolio ul li {
+  width: 12rem;
+  height: 12rem;
+  margin: 0.3rem;
+  padding: 4.4rem 0;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 0.2rem;
+  background-color: var(--color-dark-secondary);
+  color: var(--color-white);
+}
+#portfolio ul li img {
+  padding: 0;
+  max-width: 100%;
+}
+/*about section*/
+#about {
+  border-top: solid 1px var(--color-dark);
+  padding: 4rem;
+}
+#about p {
+  letter-spacing: 0.08rem;
+  padding: 4rem;
+  font-size: 1.6rem;
+  line-height: 2.472rem;
+}
+#about a {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+#about > p > cite > a {
+  text-decoration: none;
+  display: inline;
+  text-align: none;
+  font-size: 1.6rem;
+}
+/*footer*/
+footer {
+  text-align: center;
+  background-color: var(--color-dark-secondary);
+  color: var(--color-white);
+}
+footer h3 {
+  padding: 2rem 0 1rem;
+  text-align: center;
+}
+footer section ul {
+  text-align: center;
+}
+footer section ul li {
+  display: inline-block;
+}
+footer section ul li a {
+  color: var(--color-white);
+  font-size: 2rem;
+  padding: 1rem;
+}
+#up {
+  padding: 2rem 0 1rem 0;
+  color: var(--color-white);
+}
+
+@media screen and (max-width: 425px) {
+  #menu > ul > li > a {
+    padding: 0.2rem;
+  }
+  #menu > ul > li > a {
+    padding: 0;
+  }
+ #welcome{
+   display: block;
+   height: 100%;
+ }
+ #welcome dl {
+  margin: 0rem;
+}
+
+#welcome dt {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+}
+#welcome dl dd {
+  padding: 0 0.8rem;
+  margin: 0;
+  text-align: center;
+}
+#welcome figure img {
+  display: block;
+  margin: 0 auto;
+  width: 8rem;
+}
+  #skills {
+    padding: 1rem;
+  }
+  
+.listTitle {
+  font-size: 1.618rem;
+  font-weight: bold;
+}
+.listTitle > a {
+  text-decoration: underline;
+}
+#skills ul {
+  padding: 0;
+  text-align: center;
+}
+#skills ul li {
+  text-align: center;
+  padding: 0.944rem;
+}
+#skills ul li i {
+  font-size: 6.472rem;
+}
+#portfolio {
+  display: block;
+  margin: 0;
+  padding: 1rem;
+}
+#portfolio ul{
+  width: 100%;
+}
+#portfolio ul li {
+  width: auto;
+  height: auto;
+  float: none;
+  margin: 1rem auto;
+}
+#about {
+  padding: 1rem;
+}
+#about p {
+  padding: 1rem;
+}
+footer {
+  text-align: center;
+}
+footer h3 {
+  padding: 2rem 0 1rem;
+  text-align: center;
+}
+footer section ul li a {
+  font-size: 4rem;
+  padding: 1rem;
+}
+#up, #up a {
+  width: 100%;
+}
+}
