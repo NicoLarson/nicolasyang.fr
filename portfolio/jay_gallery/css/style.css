@@ -14,7 +14,7 @@ h1 {
   font-size: 2rem;
 }
 /*theme*/
-nav ul {
+header nav ul {
   background-color: var(--color-backprimary);
   margin: 0 auto;
   text-align: center;
@@ -22,17 +22,17 @@ nav ul {
   position: fixed;
   z-index: 2;
 }
-nav ul li {
+header nav ul li {
   display: inline-block;
   padding: 1rem 2rem;
 }
-nav ul li a{
+header nav ul li a {
   display: block;
   width: 100%;
   padding: 0.5rem;
 }
-nav ul li a:hover{
-  transition: 0.5s;  
+header nav ul li a:hover {
+  transition: 1s;
   border-top: 1px solid var(--color-primary);
   border-bottom: 1px solid var(--color-primary);
 }
@@ -42,6 +42,7 @@ nav ul li a:hover{
   width: 100vw;
   height: 100vh;
 }
+/* index */
 h2 {
   text-align: center;
   padding: 4rem;
@@ -54,14 +55,77 @@ h2 {
 #col2 {
   padding: 0 0.5rem;
 }
-section ul {
+#index section ul {
   display: flex;
   flex-direction: column;
 }
-section ul li img {
+#index section ul li img {
   max-width: 100%;
 }
 
+/* store */
+
+#sub-header {
+  height: 5rem;
+}
+#store {
+  padding: 4rem;
+}
+#store ul {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+#store ul li figure {
+  margin: 1rem;
+  background-color: #fafafa;
+}
+
+#store ul li figure figcaption {
+  text-align: center;
+  padding: 1rem;
+}
+#store img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 0.25rem;
+  width: 20vw;
+}
+/* about */
+
+#divnav {
+  height: 5rem;
+}
+
+#about {
+  background: url(../assets/img_gal/q-u-i-tnNX2GJyJjQ-unsplash.gif) no-repeat
+    fixed center/cover;
+  width: 100vw;
+  height: 84vh;
+}
+#aboutMe {
+  display: flex;
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+  background-color: var(--color-backprimary);
+  height: 100%;
+  opacity: 0.95;
+}
+#about section p {
+  padding: 2rem;
+}
+#about figure {
+  padding: 2rem;
+}
+#about figure img {
+  width: 12rem;
+  border-radius: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+/* footer */
 footer {
   background-color: var(--color-backprimary);
   padding: 1rem;
@@ -84,16 +148,6 @@ footer p {
   font-size: small;
   color: #999999;
 }
-
-img {
-  border-radius: 0.25rem;
-  cursor: pointer;
-}
-img:hover {
-  transition: 1s;
-  transform: scale(1.2);
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-}
 @media screen and (max-width: 425px) {
   header nav ul {
     position: relative;
@@ -109,7 +163,38 @@ img:hover {
     height: 100%;
     width: 100%;
   }
-  #col3 {
+ #index #col3 {
+    display: none;
+  }
+
+  #store{
+    margin: 0;
+    padding: 0;
+  }
+
+
+  #store img {
+    display: block;
+    width: 100%;
+  }
+
+  #about {
+    height: 100%;
+    font-size: 1rem;
+    margin-top: -7rem;
+  }
+  #aboutMe section {
+    padding: 4rem 1rem 0 0;
+    background-color: var(--color-backprimary);
+    opacity: 0.9;
+    width: 100%;
+  }
+  #aboutMe section p, footer, #fQuote, cite {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  #aboutMe figure {
     display: none;
   }
 }
