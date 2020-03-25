@@ -62,6 +62,11 @@ h2 {
 #index section ul li img {
   max-width: 100%;
 }
+#index section ul li img:hover{
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  transition: 1s;
+  transform: scale(1.05);
+}
 
 /* store */
 
@@ -80,7 +85,15 @@ h2 {
 
 #store ul li figure {
   margin: 1rem;
+  
+  border-radius: 0.25rem;
   background-color: #fafafa;
+}
+
+#store ul li figure:hover {
+  transition: 1s;
+  transform: scale(1.2);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 #store ul li figure figcaption {
@@ -90,6 +103,7 @@ h2 {
 #store img {
   display: block;
   margin: 0 auto;
+  
   border-radius: 0.25rem;
   width: 20vw;
 }
@@ -103,10 +117,8 @@ h2 {
   background: url(../assets/img_gal/q-u-i-tnNX2GJyJjQ-unsplash.gif) no-repeat
     fixed center/cover;
   width: 100vw;
-  height: 84vh;
 }
 #aboutMe {
-  display: flex;
   color: black;
   font-size: 2rem;
   text-align: center;
@@ -125,9 +137,69 @@ h2 {
   border-radius: 100%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-/* footer */
+/* Contact */
+#contact{
+  background: url(../assets/img_gal/pawel-czerwinski-m7nvl8jgeMw-unsplash.gif) fixed ;
+  height: 100vh;
+
+}
+#contact fieldset{
+  position: relative;
+  top: 4rem;
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--color-backprimary);
+  border-radius: 1rem;
+  border: hidden;
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+}
+#contact fieldset legend{
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 0.5rem
+}
+#contact fieldset ul li{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 20%;
+  font-size: 1.6rem;
+  
+}
+#contact fieldset ul li input{
+  height: 2rem;
+  border-radius: 1rem;
+  border: hidden;
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+}
+#contact fieldset ul li textarea{
+  border-radius: 1rem;
+  border: hidden;
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+}
+#contact fieldset ul li button{
+  cursor: pointer;
+  width: 8rem;
+  height: 2rem;
+  font-weight: bolder;
+  background-color: var(--color-primary);
+  color: var(--color-backprimary);
+  border-radius: 1rem;
+  margin: 0 auto;
+  border: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+}
+#contact fieldset ul li button:hover{
+  transition: 0.5s;
+  transform: scale(1.2);
+  background-color: var(--color-primary);
+  font-weight: bold;
+}
+/* Footer */
 footer {
   background-color: var(--color-backprimary);
+  width: 100%;
   padding: 1rem;
 }
 
@@ -163,7 +235,14 @@ footer p {
     height: 100%;
     width: 100%;
   }
- #index #col3 {
+  #galery{
+    padding: 0 0 0 0.4rem;
+  }
+  #galery ul li img{
+    padding: 0 0.4rem 0 0;
+
+  }
+ #index #col2 {
     display: none;
   }
 
@@ -196,5 +275,20 @@ footer p {
   }
   #aboutMe figure {
     display: none;
+  }
+  #divnav{
+    display: none;
+  }
+  #contact fieldset{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #contact fieldset ul li{
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0 auto;
+    width: 80%;
+        font-size: 1.6rem;
   }
 }
