@@ -1,5 +1,5 @@
 jQuery(function ($) {
-    var launch = new Date(2020, 3, 1, 12, 00, 00);
+    var launch = new Date(2020, 4, 1, 12, 00, 00);
     var days = $("#days");
     var hours = $("#hours");
     var minutes = $("#minutes");

@@ -43,7 +43,7 @@ let playRound = () => {
     } else if (robot == "SCISSORS" && player == "SCISSORS") {
         return "Drawww.";
     } else {
-        return "If you don't want to play, don't play!"
+        return "Follow the instructions please!"
     }
 }
 
