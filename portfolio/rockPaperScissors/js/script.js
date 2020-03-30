@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
-    
-    
-    alert("Chose your weapon! And play");
+   
+    alert("Chose your weapon! And play!");
 
 
 let player, robot, choices = ["ROCK", "PAPER", "SCISSORS"]
+
+
 
 const rock = document.querySelector('#rock');
 rock.addEventListener('click', () => {
@@ -21,9 +21,8 @@ scissors.addEventListener('click', () => {
 
 
 
-let playRound = () => {
-    robot = choices[Math.round(Math.random() * 2)];
 
+let playRound = () => {
     if (robot == "ROCK" && player == "ROCK") {
         return "Drawww.";
     } else if (robot == "ROCK" && player == "PAPER") {
@@ -50,8 +49,10 @@ let playRound = () => {
 const play = document.querySelector('#play');
 play.addEventListener('click', () => {
     {
+        
+        robot = choices[Math.round(Math.random() * 2)];
         playRound()
         alert("You choose " + player + " and robot choose " + robot + ".")
-        alert(playRound())}
-})
+        alert (playRound())
+        }
 })
