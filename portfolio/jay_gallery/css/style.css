@@ -32,12 +32,12 @@ header nav ul li a {
   padding: 0.5rem;
 }
 header nav ul li a:hover {
-  transition: 1s;
+  transition: all 1s;
   border-top: 1px solid var(--color-primary);
   border-bottom: 1px solid var(--color-primary);
 }
 .main-content-image {
-  background: url(../assets/img_gal/q-u-i-tnNX2GJyJjQ-unsplash.gif) no-repeat
+  background: url(../assets/img_gal/15.png) no-repeat
     fixed center center/cover;
   width: 100vw;
   height: 100vh;
@@ -60,11 +60,12 @@ h2 {
   flex-direction: column;
 }
 #index section ul li img {
+  border-radius: 4px;
   max-width: 100%;
 }
 #index section ul li img:hover{
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-  transition: 1s;
+  transition: all 1s;
   transform: scale(1.05);
 }
 
@@ -114,7 +115,7 @@ h2 {
 }
 
 #about {
-  background: url(../assets/img_gal/q-u-i-tnNX2GJyJjQ-unsplash.gif) no-repeat
+  background: url(../assets/img_gal/07.png) no-repeat
     fixed center/cover;
   width: 100vw;
 }
@@ -139,7 +140,7 @@ h2 {
 }
 /* Contact */
 #contact{
-  background: url(../assets/img_gal/pawel-czerwinski-m7nvl8jgeMw-unsplash.gif) fixed ;
+  background: url(../assets/img_gal/12.jpg) fixed ;
   height: 100vh;
 
 }
