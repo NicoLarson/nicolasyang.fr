@@ -35,7 +35,7 @@ html {
   
     background: #f2f3f7;
     display: block;
-    margin: 1rem auto;
+    margin: 2rem auto;
     border-radius: 1rem;
     text-transform: uppercase;
     width: 8rem;
@@ -67,6 +67,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 4rem;
   }
   #choices button {
     width: 8rem;
