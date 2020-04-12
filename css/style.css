@@ -3,438 +3,434 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 :root {
-    --color-primary: #ff5f52;
-    --color-primaty-dark: #8e0000;
-    --color-white: #fafafa;
-    --color-white-secondary: #6d6d6d;
-    --color-dark: #c7c7c7;
-    --color-dark-secondary: #1b1b1b;
-    --color-font: black;
-    --color-font-secondary: white;
-    --color-valid: green;
-    --color-danger: red;
+  --color-primary: #ff5f52;
+  --color-primaty-dark: #8e0000;
+  --color-white: #fafafa;
+  --color-white-secondary: #6d6d6d;
+  --color-dark: #c7c7c7;
+  --color-dark-secondary: #1b1b1b;
+  --color-font: black;
+  --color-font-secondary: white;
+  --color-valid: green;
+  --color-danger: red;
 }
 
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 header nav ul {
-    padding: 0.5rem 0.5rem 0 0.5rem;
-    text-align: center;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  text-align: center;
 }
 
 header nav ul li {
-    display: inline-block;
-    line-height: 3rem;
+  display: inline-block;
+  line-height: 3rem;
 }
 
 header nav ul li a {
-    display: block;
-    text-transform: uppercase;
-    padding: 0 2rem;
-    height: 100%;
-    width: 100%;
+  display: block;
+  text-transform: uppercase;
+  padding: 0 2rem;
+  height: 100%;
+  width: 100%;
 }
 
 header input {
-    display: none;
+  display: none;
 }
 
 header h1 {
-    font-family: "Spartan", sans-serif;
-    font-weight: bolder;
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 1.5rem;
+  font-family: "Spartan", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 1.5rem;
 }
 
 header li>a:hover {
-    transition: 0.7s;
-    transform: scale(1.2);
-    text-decoration: underline;
+  transition: 0.7s;
+  transform: scale(1.2);
+  text-decoration: underline;
 }
 
 /*welcome section*/
 #welcome {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 24rem;
-    margin: 0;
-    border-top: solid 1px var(--color-dark);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 24rem;
+  margin: 0;
+  border-top: solid 1px var(--color-dark);
 }
 
 #welcome dt {
-    letter-spacing: 0.08rem;
-    padding: 4rem 0 0 4rem;
-    font-size: 2rem;
-    line-height: 4rem;
-    font-weight: bolder;
+  letter-spacing: 0.08rem;
+  padding: 4rem 0 0 4rem;
+  font-size: 2rem;
+  line-height: 4rem;
+  font-weight: bolder;
 }
 
 #welcome dl dd {
-    padding: 2rem 0 0 4rem;
-    font-size: 1.6rem;
+  padding: 2rem 0 0 4rem;
+  font-size: 1.6rem;
 }
 
 #welcome img {
-    padding-top: 2rem;
-    width: 16.5rem;
+  padding-top: 2rem;
+  width: 16.5rem;
 }
 
 /*skills section*/
 #skills {
-    display: inline-block;
-    border-top: solid 1px var(--color-dark);
-    width: 100%;
-    padding: 4rem;
+  display: inline-block;
+  border-top: solid 1px var(--color-dark);
+  width: 100%;
+  padding: 4rem;
 }
 
 .listTitle {
-    font-size: 1.618rem;
-    font-weight: bold;
+  font-size: 1.618rem;
+  font-weight: bold;
 }
 
 .listTitle>a {
-    display: block;
-    text-decoration: underline;
+  display: block;
+  text-decoration: underline;
 }
 
 .listTitle>a:hover {
-    transition: 0.8s;
-    transform: scale(1.1);
+  transition: 0.8s;
+  transform: scale(1.1);
 }
 
 #skills ul {
-    padding: 0.944rem 4rem;
-    text-align: center;
+  padding: 0.944rem 4rem;
+  text-align: center;
 }
 
 #skills ul li {
-    display: inline-block;
-    text-align: center;
-    padding: 0.944rem;
+  display: inline-block;
+  text-align: center;
+  padding: 0.944rem;
 }
 
 #skills ul li i {
-    font-size: 6.472rem;
+  font-size: 6.472rem;
 }
 
 /*portfolio section*/
 #portfolio {
-    border-top: solid 1px var(--color-dark);
-    padding-top: 4rem;
+  border-top: solid 1px var(--color-dark);
+  padding-top: 4rem;
 }
 
 #portfolio h2 {
-    margin-left: 4rem;
+  margin-left: 4rem;
 }
 
 #portfolio ul {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 #portfolio ul li {
-    display: block;
+  display: block;
 }
 
 #portfolio img {
-    border: 1px solid var(--color-white);
-    width: 100%;
-    height: 100%;
-    border-radius: 4px;
+  border: 1px solid var(--color-white);
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
 }
 
 #portfolio figure {
-    border-radius: 2px;
-    width: calc(100vw / 2 - 8vw);
-    margin: 2rem 2rem 2rem 0rem;
-    padding: 1rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 2px;
+  width: calc(100vw / 2 - 8vw);
+  margin: 2rem 2rem 2rem 0rem;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 #portfolio figure:hover {
-    transform: scale(1.005);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: scale(1.005);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 #portfolio>ul>li>#jayGallery {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 #portfolio figcaption {
-    text-align: center;
-    font-size: 1.6rem;
-    padding: 0.5rem 0;
-    line-height: 2.5rem;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 0.5rem 0;
+  line-height: 2.5rem;
 }
 
 #portfolio figcaption p i {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 #portfolio .content {
-    margin: 0 2rem 4rem 2rem;
-    text-align: center;
-    padding: 4rem;
-    border-radius: 0.4rem;
-    background-color: black;
-    color: var(--color-white);
+  margin: 0 2rem 4rem 2rem;
+  text-align: center;
+  padding: 4rem;
+  border-radius: 0.4rem;
+  background-color: black;
+  color: var(--color-white);
 }
 
 #portfolio .content dd {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #portfolio .content dd div {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 
 /*about section*/
 #about {
-    border-top: solid 1px var(--color-dark);
-    padding: 4rem;
+  border-top: solid 1px var(--color-dark);
+  padding: 4rem;
 }
 
 #about p {
-    letter-spacing: 0.08rem;
-    padding: 4rem;
-    font-size: 1.6rem;
-    line-height: 2.472rem;
+  letter-spacing: 0.08rem;
+  padding: 4rem;
+  font-size: 1.6rem;
+  line-height: 2.472rem;
 }
 
 /* count-down */
 
 #about a {
-    display: block;
-    text-align: center;
-    font-size: 2rem;
-    text-decoration: underline;
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
 }
 
 #about>p>cite>a {
-    text-decoration: none;
-    display: inline;
-    text-align: none;
-    font-size: 1.6rem;
+  text-decoration: none;
+  display: inline;
+  text-align: none;
+  font-size: 1.6rem;
 }
 
 /*footer*/
 footer {
-    text-align: center;
-    background-color: var(--color-dark-secondary);
-    color: var(--color-white);
+  text-align: center;
+  background-color: var(--color-dark-secondary);
+  color: var(--color-white);
 }
 
 footer h3 {
-    padding: 2rem 0 1rem;
-    text-align: center;
+  padding: 2rem 0 1rem;
+  text-align: center;
 }
 
 footer section ul {
-    text-align: center;
+  text-align: center;
 }
 
 footer section ul li {
-    display: inline-block;
+  display: inline-block;
 }
 
 footer section ul li a {
-    color: var(--color-white);
-    font-size: 2rem;
-    padding: 1rem;
+  color: var(--color-white);
+  font-size: 2rem;
+  padding: 1rem;
 }
 
 #up {
-    padding: 2rem 0 1rem 0;
-    color: var(--color-white);
+  padding: 2rem 0 1rem 0;
+  color: var(--color-white);
 }
 
 /** mobile */
 @media screen and (max-width: 425px) {
+  header input {
+    display: block;
+  }
 
-    /** Menu mobile */
+  .title {
+    display: inline-block;
+    padding: 1.5rem 0rem 1rem 1rem;
+  }
 
-    header input {
-        display: block;
-    }
+  .material-icons {
+    font-size: 24px;
+    margin-right: 12px;
+    vertical-align: text-bottom;
+  }
 
-    /* TODO: Remove h1 and add logo*/
-    .title {
-        display: inline-block;
-        padding: 1.5rem 0rem 1rem 1rem;
-    }
-
-    .material-icons {
-        font-size: 24px;
-        margin-right: 12px;
-        vertical-align: text-bottom;
-    }
-
-    .menu {
-        background: var(--color-white);
-        color: var(--color-dark-secondary);
-    }
+  .menu {
+    background: var(--color-white);
+    color: var(--color-dark-secondary);
+  }
 
 
-    nav {
-        font-weight: bold;
-        height: 0;
-        overflow: hidden;
-        text-transform: uppercase;
-        transition: height .2s;
-    }
+  nav {
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    text-transform: uppercase;
+    transition: height .2s;
+  }
 
-    nav ul {
+  nav ul {
 
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .menu .burger {
-        appearance: none;
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        color: inherit;
-        cursor: pointer;
-        font-size: 2rem;
-        outline: 0;
-        position: absolute;
-        text-align: center;
-        top: 1rem;
-        right: 1rem;
-    }
+  .menu .burger {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 2rem;
+    outline: 0;
+    position: absolute;
+    text-align: center;
+    top: 1rem;
+    right: 1rem;
+  }
 
-    .menu .burger:before {
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        content: "\f0c9";
+  .menu .burger:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0c9";
 
-    }
+  }
 
-    .menu .burger:checked:before {
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        content: "\f00d";
-    }
+  .menu .burger:checked:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00d";
+  }
 
-    .menu .burger:checked+nav {
-        height: 50vh;
-    }
+  .menu .burger:checked+nav {
+    height: 50vh;
+  }
 
-    #welcome {
-        display: block;
-        height: 100%;
-    }
+  #welcome {
+    display: block;
+    height: 100%;
+  }
 
-    #welcome dl {
-        margin: 0rem;
-    }
+  #welcome dl {
+    margin: 0rem;
+  }
 
-    #welcome dt {
-        padding: 0;
-        margin: 0;
-        font-weight: bold;
-        font-size: 1.6rem;
-        text-align: center;
-    }
+  #welcome dt {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+  }
 
-    #welcome dl dd {
-        padding: 0 0.8rem;
-        margin: 0;
-        text-align: center;
-    }
+  #welcome dl dd {
+    padding: 0 0.8rem;
+    margin: 0;
+    text-align: center;
+  }
 
-    #welcome figure img {
-        display: block;
-        margin: 0 auto;
-        width: 8rem;
-    }
+  #welcome figure img {
+    display: block;
+    margin: 0 auto;
+    width: 8rem;
+  }
 
-    #skills {
-        text-align: center;
-        padding: 2rem;
-    }
+  #skills {
+    text-align: center;
+    padding: 2rem;
+  }
 
-    .listTitle {
-        font-size: 1.618rem;
-        font-weight: bold;
-    }
+  .listTitle {
+    font-size: 1.618rem;
+    font-weight: bold;
+  }
 
-    .listTitle>a {
-        text-decoration: underline;
-    }
+  .listTitle>a {
+    text-decoration: underline;
+  }
 
-    #skills ul {
-        padding: 0;
-        text-align: center;
-    }
+  #skills ul {
+    padding: 0;
+    text-align: center;
+  }
 
-    #skills ul li {
-        text-align: center;
-        padding: 0.944rem;
-    }
+  #skills ul li {
+    text-align: center;
+    padding: 0.944rem;
+  }
 
-    #skills ul li i {
-        font-size: 6.472rem;
-    }
+  #skills ul li i {
+    font-size: 6.472rem;
+  }
 
-    #portfolio {
-        padding: 0;
-    }
+  #portfolio {
+    padding: 0;
+  }
 
-    #portfolio h2 {
-        padding: 2rem 2rem 0 2rem;
-    }
+  #portfolio h2 {
+    padding: 2rem 2rem 0 2rem;
+  }
 
-    #portfolio ul {
-        flex-direction: column;
-    }
+  #portfolio ul {
+    flex-direction: column;
+  }
 
-    #portfolio ul li {
-        width: auto;
-    }
+  #portfolio ul li {
+    width: auto;
+  }
 
-    #portfolio ul li figure {
-        width: 100%;
-    }
+  #portfolio ul li figure {
+    width: 100%;
+  }
 
-    #portfolio>ul>li>#jayGallery {
-        margin-left: 0rem;
-    }
+  #portfolio>ul>li>#jayGallery {
+    margin-left: 0rem;
+  }
 
-    #about {
-        text-align: center;
-        padding: 2rem;
-    }
+  #about {
+    text-align: center;
+    padding: 2rem;
+  }
 
-    #about p {
-        text-align: center;
-        padding: 1rem;
-    }
+  #about p {
+    text-align: center;
+    padding: 1rem;
+  }
 
-    footer {
-        text-align: center;
-    }
+  footer {
+    text-align: center;
+  }
 
-    footer h3 {
-        padding: 2rem 0 1rem;
-        text-align: center;
-    }
+  footer h3 {
+    padding: 2rem 0 1rem;
+    text-align: center;
+  }
 
-    footer section ul li a {
-        font-size: 4rem;
-        padding: 1rem;
-    }
+  footer section ul li a {
+    font-size: 4rem;
+    padding: 1rem;
+  }
 
-    #up,
-    #up a {
-        width: 100%;
-    }
+  #up,
+  #up a {
+    width: 100%;
+  }
 }
