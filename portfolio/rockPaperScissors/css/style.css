@@ -1,102 +1,107 @@
 /* Reset */
 html {
-    font-size: 1.6rem;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  body,
-  h1,
-  h2,
-  p {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-  }
-  * {
-    border-style: none;
-  }
-  /* theme */
-  
-  :root {
-    --color-primary: #fafafa;
-    --color-secondary: #222;
-  }
-  header {
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
-    text-align: center;
-    padding: 1rem;
-  }
-  main {
-    height: 80vh;
-  
-    background: #fff;
-  }
-  #play {
-  
-    background: #f2f3f7;
-    display: block;
-    margin: 2rem auto;
-    border-radius: 1rem;
-    text-transform: uppercase;
-    width: 8rem;
-    height: 2rem;
-    font-size: 1.2rem;
-    color: #5a84a2;
-    box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
-      -2px -2px 12px rgba(255, 255, 255, 0.5),
-      inset -2px -2px 4px rgba(255, 255, 255, 0.1),
-      -2px -2px 8px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-  }
-  #play:hover {
-    transition: 0.1s;
-  
-    transform: scale(0.98);
-    box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
-      inset -2px -2px 12px rgba(255, 255, 255, 0.5),
-      inset -2px -2px 4px rgba(255, 255, 255, 0.1),
-      inset -2px -2px 8px rgba(0, 0, 0, 0.15);
-  }
-  #play:hover span{
-  
-    transform: scale(0.98);
-  
-  }
-  
-  #choices {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 4rem;
-  }
-  #choices button {
-    width: 8rem;
-    height: 8rem;
-    font-size: 4rem;
-    border-radius: 10rem;
-   
-    background: #f2f3f7;
-    box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
-      -2px -2px 12px rgba(255, 255, 255, 0.5),
-      inset -2px -2px 4px rgba(255, 255, 255, 0.1),
-      -2px -2px 8px rgba(0, 0, 0, 0.15); cursor: pointer;
-  }
-  
-  
-  #choices button:hover {
-      transition: 0.1s;
-    
-      transform: scale(0.98);
-      box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
-        inset -2px -2px 12px rgba(255, 255, 255, 0.5),
-        inset -2px -2px 4px rgba(255, 255, 255, 0.1),
-        inset -2px -2px 8px rgba(0, 0, 0, 0.15);
-    }
-  
-  footer {
-    padding: 1rem;
-    font-size: 0.8rem;
-    background-color: #222;
-    color: #fafafa;
-  }
-  
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+* {
+  border-style: none;
+}
+
+/* theme */
+
+:root {
+  --color-primary: #fafafa;
+  --color-secondary: #222;
+}
+
+header {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  height: 80vh;
+
+  background: #fff;
+}
+
+#play {
+  background: #f2f3f7;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  width: 8rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  color: #5a84a2;
+  box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+    -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.1),
+    -2px -2px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+#play:hover {
+  transition: 0.1s;
+
+  transform: scale(0.98);
+  box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+    inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.1),
+    inset -2px -2px 8px rgba(0, 0, 0, 0.15);
+}
+
+#play:hover span {
+  transform: scale(0.98);
+}
+
+#choices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 4rem;
+}
+
+#choices button {
+  width: 8rem;
+  height: 8rem;
+  font-size: 4rem;
+  border-radius: 10rem;
+
+  background: #f2f3f7;
+  box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+    -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.1),
+    -2px -2px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+#choices button:hover {
+  transition: 0.1s;
+
+  transform: scale(0.98);
+  box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+    inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.1),
+    inset -2px -2px 8px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+  padding: 1rem;
+  font-size: 0.8rem;
+  background-color: #222;
+  color: #fafafa;
+}
