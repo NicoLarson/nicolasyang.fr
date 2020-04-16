@@ -15,25 +15,32 @@
         <h1>Rock Paper Scissors</h1>
     </header>
     <main>
-        <div id="scoreTable">
-            <ul>
-                <li>Player : <span id="playerScore"></span></li>
-                <li>VS</li>
-                <li>Robot : <span id="robotScore"></span></li>
-            </ul>
-        </div>
-
+        <h2>Are you ready ?</h2>
+        <table id="scoreTable">
+            <thead>
+                <tr>
+                    <th colspan="2">SCORE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Player : <span id="playerScore">0</span></td>
+                    <td>Robot : <span id="robotScore">0</span></td>
+                </tr>
+            </tbody>
+        </table>
         <button id="play"><span>Play</span></button>
+        <p id="round">Round</p>
         <div id="choices">
             <button id="rock" class="choice"><i class="far fa-hand-rock"></i></button>
             <button id="paper" class="choice"><i class="far fa-hand-paper"></i></button>
             <button id="scissors" class="choice"><i class="far fa-hand-scissors"></i></button>
         </div>
-
     </main>
     <script src="./js/scriptv2.js"></script>
     <footer>
         <p>&copy; Nicolas Yang - 2020</p>
+        <p id="reset">Reset</p>
     </footer>
 </body>
 

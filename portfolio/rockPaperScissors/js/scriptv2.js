@@ -1,20 +1,28 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     //* Version 2
-
     let playerChoice, playerScore = 0,
         robotChoice, robotScore = 0
     let choices = ["rock", "paper", "scissors"]
-
     let play = document.querySelector("#play")
+    let showPlayerScore = document.querySelector("#playerScore")
+    let showRobotScore = document.querySelector("#robotScore")
+    let theGame = document.querySelector("main > h2")
+    let nRound = document.querySelector("#round")
+    let i = 0
+
+// TODO : Button RESET and You win You lose
     play.addEventListener('click', () => {
-        robotChoice = choices[Math.round(Math.random() * 2)];
-        rules()
-        console.log(playerChoice)
-        console.log(robotChoice)
-    // TODO : Score
-        console.log(playerScore)
-        console.log(robotScore)
+        i++
+        if (i < 6) {
+            nRound.innerText = "Round " + i
+            robotChoice = choices[Math.round(Math.random() * 2)];
+            rules()
+            theGame.innerText = "You chose " + playerChoice + " and the robot chose " + robotChoice + " !"
+            //* Table score
+            showPlayerScore.innerText = playerScore
+            showRobotScore.innerText = robotScore
+        }
     })
 
     //* Player Choices
@@ -60,12 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             return "Follow the instructions please!"
         }
-    }
-    // TODO : 5 turns
-    let x = 0
-    for (let i = 0; i < 5; i++) {
-        x += 2
-        console.log(x)
     }
 
 })
