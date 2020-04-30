@@ -134,10 +134,9 @@ header li>a:hover {
 #portfolio ul {
   display: flex;
   flex-direction: row;
-}
+  justify-content: space-around;
+  flex-wrap: wrap;
 
-#portfolio ul li {
-  display: block;
 }
 
 #portfolio img {
