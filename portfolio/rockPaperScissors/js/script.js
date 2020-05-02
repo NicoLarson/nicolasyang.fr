@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-   
+console.log("okok")
 // TODO: Resultats
 
     // TODO: Loop 5 tours

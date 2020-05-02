@@ -1,20 +1,35 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    //* Version 2
+
     let playerChoice, playerScore = 0,
         robotChoice, robotScore = 0
-    let choices = ["rock", "paper", "scissors"]
-    let play = document.querySelector("#play")
-    let showPlayerScore = document.querySelector("#playerScore")
-    let showRobotScore = document.querySelector("#robotScore")
-    let theGame = document.querySelector("main > h2")
-    let nRound = document.querySelector("#round")
+    const choices = ["rock", "paper", "scissors"]
+    const play = document.querySelector("#play")
+    const showPlayerScore = document.querySelector("#playerScore")
+    const showRobotScore = document.querySelector("#robotScore")
+    const theGame = document.querySelector("main > h2")
+    const nRound = document.querySelector("#round")
+    const reset = document.getElementById("reset")
+
     let i = 0
 
-// TODO : Button RESET and You win You lose
+    //* Reset button
+    reset.addEventListener('click', () => {
+        i = 0
+        playerScore = 0
+        robotScore = 0
+        showPlayerScore.innerText = playerScore
+        showRobotScore.innerText = robotScore
+        theGame.innerText = "Please chose a weapon"
+    })
+
     play.addEventListener('click', () => {
         i++
-        if (i < 6) {
+        //* If undefined
+        if (playerChoice == undefined) {
+            theGame.innerText = "Please chose a weapon"
+            i--
+        } else if (i < 6) {
             nRound.innerText = "Round " + i
             robotChoice = choices[Math.round(Math.random() * 2)];
             rules()
@@ -22,6 +37,12 @@ document.addEventListener("DOMContentLoaded", () => {
             //* Table score
             showPlayerScore.innerText = playerScore
             showRobotScore.innerText = robotScore
+        } else {
+            if (playerScore > robotScore) {
+                theGame.innerText = "You win!"
+            } else if (playerScore < robotScore) {
+                theGame.innerText = "You lose!"
+            }
         }
     })
 

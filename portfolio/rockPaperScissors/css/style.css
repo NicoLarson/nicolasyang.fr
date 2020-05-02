@@ -31,39 +31,43 @@ header {
   background-color: var(--color-secondary);
   color: var(--color-primary);
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem;
+  font-size: 0.8rem;
 }
+
 
 main {
   background: #fff;
+  width: 100%;
 }
 
 main h2 {
   text-align: center;
-  padding: 1rem;
+  font-size: 1rem;
+  padding: 0.4rem;
 }
+
 
 main table {
   margin: 0 auto;
-  padding-bottom: 1.5rem;
 }
 
 main table td {
-  padding: 1rem;
   text-align: center;
 }
-main p{
+
+main p {
   text-align: center;
   margin: 0 auto;
-  padding-top: 0.5rem;
   text-transform: uppercase;
-}
+  height: 100%;
+} 
 
 
-#play {
+#play, #reset{
   background: #f2f3f7;
   display: block;
-  margin: 0 auto;
+  margin: 1rem auto;
   border-radius: 1rem;
   text-transform: uppercase;
   width: 8rem;
@@ -77,7 +81,7 @@ main p{
   cursor: pointer;
 }
 
-#play:hover {
+#play:hover, #reset:hover {
   transition: 0.1s;
   transform: scale(0.98);
   box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
@@ -94,15 +98,14 @@ main p{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 4rem;
 }
 
 #choices button {
-  width: 8rem;
-  height: 8rem;
-  font-size: 4rem;
+  margin: 0.4rem;
+  width: 10vw;
+  height: 10vw;
+  font-size: 5vw;
   border-radius: 10rem;
-
   background: #f2f3f7;
   box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
     -2px -2px 12px rgba(255, 255, 255, 0.5),
@@ -119,22 +122,4 @@ main p{
     inset -2px -2px 12px rgba(255, 255, 255, 0.5),
     inset -2px -2px 4px rgba(255, 255, 255, 0.1),
     inset -2px -2px 8px rgba(0, 0, 0, 0.15);
-}
-
-footer {
-  padding: 0.2rem;
-  font-size: 0.4rem;
-  background-color: #222;
-  color: #fafafa;
-}
-footer #reset, footer p{
-  display: inline-block;
-}
-footer #reset{
-  color: black;
-  font-size: 0.5rem;
-  float: right;
-  background-color: chartreuse;
-  border-radius: 0.5rem;
-  padding: 0 1rem;
 }
