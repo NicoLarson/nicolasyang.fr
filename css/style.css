@@ -71,12 +71,15 @@ header li>a:hover {
   font-size: 2rem;
   line-height: 4rem;
   font-weight: bolder;
+  font-family: monospace;
 }
 
 #welcome dl dd {
   padding: 2rem 0 0 4rem;
   font-size: 1.6rem;
 }
+
+
 
 #welcome img {
   padding-top: 2rem;
