@@ -65,22 +65,20 @@ header li>a:hover {
   border-top: solid 1px var(--color-dark);
 }
 
-#welcome dt {
+#welcome p {
   letter-spacing: 0.08rem;
   padding: 4rem 0 0 4rem;
   font-size: 2rem;
   line-height: 4rem;
-  font-weight: bolder;
-}
-
-#welcome dl dd {
-  padding: 2rem 0 0 4rem;
   font-size: 1.6rem;
+  width: 100%;
 }
 
 
-
-#welcome img {
+#welcome figure img {
+  position: absolute;
+  left: calc(100%/2 + 8rem);
+  display: block;
   padding-top: 2rem;
   width: 16.5rem;
 }
@@ -280,7 +278,7 @@ footer section ul li a {
 }
 
 /** mobile */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   header input {
     display: block;
   }
@@ -353,26 +351,19 @@ footer section ul li a {
     height: 100%;
   }
 
-  #welcome dl {
-    margin: 0rem;
-  }
-
-  #welcome dt {
-    padding: 0;
-    margin: 0;
-    font-weight: bold;
+  #welcome p {
+    margin: 0 auto;
+    padding: 1rem 0 0 ;
     font-size: 1.6rem;
+    line-height: 2rem;
     text-align: center;
   }
 
-  #welcome dl dd {
-    padding: 0 0.8rem;
-    margin: 0;
-    text-align: center;
-  }
 
   #welcome figure img {
     display: block;
+    left: 0;
+    position: relative;
     margin: 0 auto;
     width: 8rem;
   }
