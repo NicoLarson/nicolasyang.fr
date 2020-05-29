@@ -1,0 +1,92 @@
+/*reset*/
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+nav,
+section,
+p,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+div,
+figure,
+figcaption,
+img {
+  margin: 0;
+  padding: 0;
+  font-weight: 100%;
+  list-style: none;
+}
+abbr {
+  text-decoration: none;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+/* Theme */
+
+.backWheel,
+.frontWheel,
+.char,
+.labelBlueDark,
+.labelBlue,
+.labelOrange,
+.labelYellow,
+.pointBlueDark,
+.pointBlue,
+.pointOrange,
+.pointYellow,
+.titleBlueDark,
+.titleBlue,
+.titleOrange,
+.titleYellow,
+.textBlueDark,
+.textBlue,
+.textOrange,
+.textYellow {
+  display: block;
+}
+
+/* positionnement Label */
+#labelTextBlueDark,
+#labelTextBlue,
+#labelTextOrange,
+#labelTextYellow {
+  cursor: pointer;
+  opacity: 0;
+}
+
+.titleBlueDark,
+.titleBlue,
+.titleOrange,
+.titleYellow,
+.textBlueDark,
+.textBlue,
+.textOrange,
+.textYellow {
+  transform: scaleX(0);
+  opacity: 0;
+}
+.pointBlueDark,
+.pointBlue,
+.pointOrange,
+.pointYellow {
+  opacity: 0;
+}

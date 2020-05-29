@@ -18,7 +18,7 @@
 h2 {
   font-size: 2rem;
 }
-
+/* Nav */
 header nav ul {
   padding: 0.5rem 0.5rem 0 0.5rem;
   text-align: center;
@@ -49,10 +49,9 @@ header h1 {
   padding-top: 1.5rem;
 }
 
-header li>a:hover {
+header li > a:hover {
   transition: 0.7s;
   transform: scale(1.2);
-  text-decoration: underline;
 }
 
 /*welcome section*/
@@ -67,17 +66,17 @@ header li>a:hover {
 
 #welcome p {
   letter-spacing: 0.08rem;
-  padding: 4rem 0 0 4rem;
+  padding: 4rem 12rem 8rem 8rem;
   font-size: 2rem;
   line-height: 4rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   width: 100%;
+  font-family: monospace;
 }
-
 
 #welcome figure img {
   position: absolute;
-  left: calc(100%/2 + 8rem);
+  left: calc(100% / 2 + 8rem);
   display: block;
   padding-top: 2rem;
   width: 16.5rem;
@@ -96,12 +95,12 @@ header li>a:hover {
   font-weight: bold;
 }
 
-.listTitle>a {
+.listTitle > a {
   display: block;
   text-decoration: underline;
 }
 
-.listTitle>a:hover {
+.listTitle > a:hover {
   transition: 0.8s;
   transform: scale(1.1);
 }
@@ -136,7 +135,6 @@ header li>a:hover {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-
 }
 
 #portfolio img {
@@ -170,7 +168,7 @@ header li>a:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-#portfolio>ul>li>#jayGallery {
+#portfolio > ul > li > #jayGallery {
   margin-left: 2rem;
 }
 
@@ -203,7 +201,6 @@ header li>a:hover {
   padding: 1rem;
 }
 
-
 #portfolio ul li a div {
   display: flex;
   justify-content: center;
@@ -215,6 +212,12 @@ header li>a:hover {
   font-size: 8rem;
   z-index: 1;
   padding-top: 4rem;
+}
+#GSAP figcaption p>img{
+  width: 2rem;
+  filter: none;
+  transform: none;
+
 }
 
 /*about section*/
@@ -239,7 +242,7 @@ header li>a:hover {
   text-decoration: underline;
 }
 
-#about>p>cite>a {
+#about > p > cite > a {
   text-decoration: none;
   display: inline;
   text-align: none;
@@ -278,7 +281,7 @@ footer section ul li a {
 }
 
 /** mobile */
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 444px) {
   header input {
     display: block;
   }
@@ -299,17 +302,15 @@ footer section ul li a {
     color: var(--color-dark-secondary);
   }
 
-
   nav {
     font-weight: bold;
     height: 0;
     overflow: hidden;
     text-transform: uppercase;
-    transition: height .2s;
+    transition: height 0.2s;
   }
 
   nav ul {
-
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -333,7 +334,6 @@ footer section ul li a {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f0c9";
-
   }
 
   .menu .burger:checked:before {
@@ -342,7 +342,7 @@ footer section ul li a {
     content: "\f00d";
   }
 
-  .menu .burger:checked+nav {
+  .menu .burger:checked + nav {
     height: 50vh;
   }
 
@@ -353,12 +353,11 @@ footer section ul li a {
 
   #welcome p {
     margin: 0 auto;
-    padding: 1rem 0 0 ;
+    padding: 1rem 0 0;
     font-size: 1.6rem;
     line-height: 2rem;
     text-align: center;
   }
-
 
   #welcome figure img {
     display: block;
@@ -378,7 +377,7 @@ footer section ul li a {
     font-weight: bold;
   }
 
-  .listTitle>a {
+  .listTitle > a {
     text-decoration: underline;
   }
 
@@ -416,7 +415,7 @@ footer section ul li a {
     width: 100%;
   }
 
-  #portfolio>ul>li>#jayGallery {
+  #portfolio > ul > li > #jayGallery {
     margin-left: 0rem;
   }
 
