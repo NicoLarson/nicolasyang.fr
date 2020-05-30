@@ -3,16 +3,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let playerChoice, playerScore = 0,
         robotChoice, robotScore = 0, i = 0
-    const choices = ["rock", "paper", "scissors"]
-    const showPlayerScore = document.getElementById("playerScore")
-    const showRobotScore = document.getElementById("robotScore")
-    const reset = document.getElementById("reset")
-    const rock = document.getElementById("rock")
-    const paper = document.getElementById("paper")
-    const scissors = document.getElementById("scissors")
+    const choices = ["rock", "paper", "scissors"],
+     showPlayerScore = document.getElementById("playerScore"),
+     showRobotScore = document.getElementById("robotScore"),
+     showPlayerChoice = document.getElementById("playerChoice"),
+     showRobotChoice = document.getElementById("robotChoice"),
+     reset = document.getElementById("reset"),
+     rock = document.getElementById("rock"),
+     paper = document.getElementById("paper"),
+     scissors = document.getElementById("scissors"),
+     theGame = document.querySelector("main>h2")
+
 
     //* Reset button
     reset.addEventListener('click', () => {
+        i = 0
         playerScore = 0
         robotScore = 0
         showPlayerScore.innerText = playerScore
@@ -49,32 +54,53 @@ document.addEventListener("DOMContentLoaded", () => {
             return "Follow the instructions please!"
         }
     }
-
+    //* Player Choices
     rock.addEventListener("click", () => {
-        playerChoice = "rock"
-        play()
+        if (i < 6) {
+            playerChoice = "rock"
+            showPlayerChoice.innerHTML = `<i class="far fa-hand-rock"></i>`
+            play()
+        }
     })
     paper.addEventListener("click", () => {
-        playerChoice = "paper"
+        if (i < 6) {
+            playerChoice = "paper"
+            showPlayerChoice.innerHTML = `<i class="far fa-hand-paper"></i>`
+            play()
+        }
     })
-
     scissors.addEventListener("click", () => {
-        playerChoice = "scissors"
+        if (i < 6) {
+            playerChoice = "scissors"
+            showPlayerChoice.innerHTML = `<i class="far fa-hand-scissors"></i>`
+            play()
+        }
     })
 
-    //* Play
-
+    //* The Game
     let play = () => {
         i++
         if (i < 6) {
+            theGame.innerHTML = `Round ${i}`
             robotChoice = choices[Math.round(Math.random() * 2)];
+            if (robotChoice == "rock") {
+                showRobotChoice.innerHTML = `<i class="far fa-hand-rock"></i>`
+            } else if (robotChoice == "paper") {
+                showRobotChoice.innerHTML = `<i class="far fa-hand-paper"></i>`
+            } else {
+                showRobotChoice.innerHTML = `<i class="far fa-hand-scissors"></i>`
+            } rock
             rules()
             //* Table score
             showPlayerScore.innerText = playerScore
             showRobotScore.innerText = robotScore
         } else {
             if (playerScore > robotScore) {
+                theGame.innerHTML = "You Win !"
             } else if (playerScore < robotScore) {
+                theGame.innerHTML = "You Lose !"
+            } else {
+                theGame.innerHTML = "Drawww..."
             }
         }
     }
