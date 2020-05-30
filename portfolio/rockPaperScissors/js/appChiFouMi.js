@@ -17,11 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //* Reset button
     reset.addEventListener('click', () => {
-        i = 0
+        i = 1
         playerScore = 0
         robotScore = 0
         showPlayerScore.innerText = playerScore
         showRobotScore.innerText = robotScore
+        theGame.innerHTML = "ROUND 1"
     })
 
     //* Rules
