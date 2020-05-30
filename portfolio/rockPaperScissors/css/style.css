@@ -9,7 +9,9 @@ h1,
 h2,
 p,
 ul,
-li {
+i,
+li,
+button {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -22,104 +24,72 @@ li {
 /* theme */
 
 :root {
-  --color-primary: #fafafa;
-  --color-secondary: #222;
+  --color-primary: #ecf0f1;
+  --color-secondary: #2980b9;
+  --color-black: #222;
+  --color-white: #fff;
 }
 
-
 header {
-  background-color: var(--color-secondary);
+  background-color: var(--color-black);
   color: var(--color-primary);
   text-align: center;
   padding: 1rem;
   font-size: 0.8rem;
+  height: 2rem;
 }
-
 
 main {
-  background: #fff;
-  width: 100%;
+  background: var(--color-secondary);
+  max-width: 100%;
+  height: calc(100vh - 4rem);
 }
 
-main h2 {
+table {
+  max-width: 80%;
+  margin: 0rem auto;
+  padding-top: 2rem;
   text-align: center;
-  font-size: 1rem;
+}
+
+thead tr td:first-child > i{
+  color: #2c3e50;
+}
+thead tr td:nth-child(3) > i{
+  color: #bdc3c7;
+}
+tr td i, tr td {
   padding: 0.4rem;
+  font-size: 2.1rem;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
 }
 
-
-main table {
-  margin: 0 auto;
+#choices button:hover{
+  cursor: pointer;
+  transition: 0.2s linear;
+  transform: scale(1.4);
+}
+#choices button:active{
+  transform: scale(0.8);
+}
+button:focus{
+  outline: none;
 }
 
-main table td {
-  text-align: center;
-}
-
-main p {
-  text-align: center;
-  margin: 0 auto;
-  text-transform: uppercase;
-  height: 100%;
-} 
-
-
-#play, #reset{
-  background: #f2f3f7;
+main>button{
   display: block;
-  margin: 1rem auto;
-  border-radius: 1rem;
-  text-transform: uppercase;
-  width: 8rem;
-  height: 2rem;
-  font-size: 1.2rem;
-  color: #5a84a2;
-  box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
-    -2px -2px 12px rgba(255, 255, 255, 0.5),
-    inset -2px -2px 4px rgba(255, 255, 255, 0.1),
-    -2px -2px 8px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  margin: 0.4rem auto;
+  padding: 0.4rem;
+  background-color: #2c3e50 ;
+  color: var(--color-white);
+  border-radius: 0.8rem;
 }
-
-#play:hover, #reset:hover {
-  transition: 0.1s;
-  transform: scale(0.98);
-  box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
-    inset -2px -2px 12px rgba(255, 255, 255, 0.5),
-    inset -2px -2px 4px rgba(255, 255, 255, 0.1),
-    inset -2px -2px 8px rgba(0, 0, 0, 0.15);
+main>button:hover{
+  transition: 0.2s linear;
+  transform: scale(1.2);
 }
-
-#play:hover span {
-  transform: scale(0.98);
-}
-
-#choices {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-#choices button {
-  margin: 0.4rem;
-  width: 10vw;
-  height: 10vw;
-  font-size: 5vw;
-  border-radius: 10rem;
-  background: #f2f3f7;
-  box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
-    -2px -2px 12px rgba(255, 255, 255, 0.5),
-    inset -2px -2px 4px rgba(255, 255, 255, 0.1),
-    -2px -2px 8px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-}
-
-#choices button:hover {
-  transition: 0.1s;
-
-  transform: scale(0.98);
-  box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
-    inset -2px -2px 12px rgba(255, 255, 255, 0.5),
-    inset -2px -2px 4px rgba(255, 255, 255, 0.1),
-    inset -2px -2px 8px rgba(0, 0, 0, 0.15);
+main>button:active{
+  transform: scale(0.8);
 }
