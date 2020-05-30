@@ -414,6 +414,9 @@ footer section ul li a {
   #portfolio ul li figure {
     width: 100%;
   }
+  #portfolio ul li img {
+    filter: blur(0);
+  }
 
   #portfolio > ul > li > #jayGallery {
     margin-left: 0rem;
