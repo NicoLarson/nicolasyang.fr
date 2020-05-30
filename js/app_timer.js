@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     jQuery(function ($) {
-        var launch = new Date(2020, 5, 1, 12, 00, 00);
+        var launch = new Date(2020, 6, 1, 12, 00, 00);
         var days = $("#days");
         var hours = $("#hours");
         var minutes = $("#minutes");
