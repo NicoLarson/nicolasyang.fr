@@ -27,16 +27,16 @@ div,
 figure,
 figcaption,
 img {
-  margin: 0;
-  padding: 0;
+  margin     : 0;
+  padding    : 0;
   font-weight: 100%;
-  list-style: none;
+  list-style : none;
 }
 abbr {
   text-decoration: none;
 }
 a {
-  color: #222;
+  color          : #222;
   text-decoration: none;
 }
 
@@ -82,7 +82,7 @@ a {
 .textOrange,
 .textYellow {
   transform: scaleX(0);
-  opacity: 0;
+  opacity  : 0;
 }
 .pointBlueDark,
 .pointBlue,
