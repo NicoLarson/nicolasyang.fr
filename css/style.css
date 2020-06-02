@@ -1,320 +1,75 @@
-/*theme*/
 @import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+html {
+  scroll-behavior: smooth; }
 
-:root {
-  --color-primary: #ff5f52;
-  --color-primaty-dark: #8e0000;
-  --color-white: #fafafa;
-  --color-white-secondary: #6d6d6d;
-  --color-dark: #c7c7c7;
-  --color-dark-secondary: #1b1b1b;
-  --color-font: black;
-  --color-font-secondary: white;
-  --color-valid: green;
-  --color-danger: red;
-}
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  margin: 0; }
 
-h2 {
-  font-size: 2rem;
-}
-/* Nav */
-header nav ul {
-  padding: 0.5rem 0.5rem 0 0.5rem;
-  text-align: center;
-}
+* {
+  box-sizing: border-box; }
 
-header nav ul li {
-  display: inline-block;
-  line-height: 3rem;
-}
-
-header nav ul li a {
-  display: block;
-  text-transform: uppercase;
-  padding: 0 2rem;
-  height: 100%;
-  width: 100%;
-}
-
-header input {
-  display: none;
-}
-
-header h1 {
-  font-family: "Spartan", sans-serif;
-  font-weight: bolder;
-  text-align: center;
-  font-size: 2rem;
-  padding-top: 1.5rem;
-}
-
-header li > a:hover {
-  transition: 0.7s;
-  transform: scale(1.2);
-}
-
-/*welcome section*/
-#welcome {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 24rem;
+h1,
+h2,
+h3,
+h4,
+nav,
+section,
+p,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+div,
+figure,
+figcaption,
+img {
   margin: 0;
-  border-top: solid 1px var(--color-dark);
-}
+  padding: 0;
+  font-weight: 100%;
+  list-style: none; }
 
-#welcome p {
-  letter-spacing: 0.08rem;
-  padding: 4rem 12rem 8rem 8rem;
-  font-size: 2rem;
-  line-height: 4rem;
-  font-size: 1.8rem;
-  width: 100%;
-  font-family: monospace;
-}
+abbr {
+  text-decoration: none; }
 
-#welcome figure img {
-  position: absolute;
-  left: calc(100% / 2 + 8rem);
-  display: block;
-  padding-top: 2rem;
-  width: 16.5rem;
-}
+a {
+  color: #222;
+  text-decoration: none; }
 
-/*skills section*/
-#skills {
-  display: inline-block;
-  border-top: solid 1px var(--color-dark);
-  width: 100%;
-  padding: 4rem;
-}
+h1 {
+  font-family: 'Spartan'; }
 
-.listTitle {
-  font-size: 1.618rem;
-  font-weight: bold;
-}
-
-.listTitle > a {
-  display: block;
-  text-decoration: underline;
-}
-
-.listTitle > a:hover {
-  transition: 0.8s;
-  transform: scale(1.1);
-}
-
-#skills ul {
-  padding: 0.944rem 4rem;
-  text-align: center;
-}
-
-#skills ul li {
-  display: inline-block;
-  text-align: center;
-  padding: 0.944rem;
-}
-
-#skills ul li i {
-  font-size: 6.472rem;
-}
-
-/*portfolio section*/
-#portfolio {
-  border-top: solid 1px var(--color-dark);
-  padding-top: 4rem;
-}
-
-#portfolio h2 {
-  margin-left: 4rem;
-}
-
-#portfolio ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-#portfolio img {
-  border: 1px solid var(--color-white);
-  width: 100%;
-  height: 100%;
-  border-radius: 4px;
-}
-
-#portfolio figure {
-  border-radius: 2px;
-  width: calc(100vw / 3 - 8vw);
-  margin: 2rem 2rem 2rem 0rem;
-  padding: 1rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-#portfolio ul li img {
-  z-index: 0;
-  filter: blur(0.15rem);
-}
-
-#portfolio ul li img:hover {
-  filter: blur(0);
-}
-
-#portfolio figure:hover {
-  filter: blur(0);
-  transform: scale(1.005);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-#portfolio > ul > li > #jayGallery {
-  margin-left: 2rem;
-}
-
-#portfolio figcaption {
-  text-align: center;
-  font-size: 1.6rem;
-  padding: 0.5rem 0;
-  line-height: 2.5rem;
-}
-
-#portfolio figcaption p i {
-  font-size: 2rem;
-}
-
-#portfolio .content {
-  margin: 0 2rem 4rem 2rem;
-  text-align: center;
-  padding: 4rem;
-  border-radius: 0.4rem;
-  background-color: black;
-  color: var(--color-white);
-}
-
-#portfolio .content dd {
-  display: flex;
-  justify-content: center;
-}
-
-#portfolio .content dd div {
-  padding: 1rem;
-}
-
-#portfolio ul li a div {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-}
-
-#portfolio ul li a i {
-  position: absolute;
-  font-size: 8rem;
-  z-index: 1;
-  padding-top: 4rem;
-}
-#GSAP figcaption p>img{
-  width: 2rem;
-  filter: none;
-  transform: none;
-
-}
-
-/*about section*/
-#about {
-  border-top: solid 1px var(--color-dark);
-  padding: 4rem;
-}
-
-#about p {
-  letter-spacing: 0.08rem;
-  padding: 4rem;
-  font-size: 1.6rem;
-  line-height: 2.472rem;
-}
-
-/* count-down */
-
-#about a {
-  display: block;
-  text-align: center;
-  font-size: 2rem;
-  text-decoration: underline;
-}
-
-#about > p > cite > a {
-  text-decoration: none;
-  display: inline;
-  text-align: none;
-  font-size: 1.6rem;
-}
-
-/*footer*/
-footer {
-  text-align: center;
-  background-color: var(--color-dark-secondary);
-  color: var(--color-white);
-}
-
-footer h3 {
-  padding: 2rem 0 1rem;
-  text-align: center;
-}
-
-footer section ul {
-  text-align: center;
-}
-
-footer section ul li {
-  display: inline-block;
-}
-
-footer section ul li a {
-  color: var(--color-white);
-  font-size: 2rem;
-  padding: 1rem;
-}
-
-#up {
-  padding: 2rem 0 1rem 0;
-  color: var(--color-white);
-}
-
-/** mobile */
-@media screen and (max-width: 444px) {
-  header input {
-    display: block;
-  }
-
+@media screen and (max-width: 759px) {
   .title {
     display: inline-block;
-    padding: 1.5rem 0rem 1rem 1rem;
-  }
+    padding: 1.5rem 0rem 1rem 1rem; }
 
   .material-icons {
     font-size: 24px;
     margin-right: 12px;
-    vertical-align: text-bottom;
-  }
+    vertical-align: text-bottom; }
 
   .menu {
     background: var(--color-white);
-    color: var(--color-dark-secondary);
-  }
+    color: var(--color-dark-secondary); }
 
   nav {
     font-weight: bold;
     height: 0;
     overflow: hidden;
     text-transform: uppercase;
-    transition: height 0.2s;
-  }
-
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
+    transition: height 0.2s; }
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+      nav ul li {
+        padding: 1rem;
+        font-size: 1rem; }
 
   .menu .burger {
     appearance: none;
@@ -327,127 +82,228 @@ footer section ul li a {
     position: absolute;
     text-align: center;
     top: 1rem;
-    right: 1rem;
-  }
+    right: 1rem; }
 
   .menu .burger:before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "\f0c9";
-  }
+    content: "\f0c9"; }
 
   .menu .burger:checked:before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "\f00d";
-  }
+    content: "\f00d"; }
 
   .menu .burger:checked + nav {
-    height: 50vh;
-  }
+    height: 100%; } }
+@use 'base';
+section {
+  max-height: 100%;
+  max-width: 100%;
+  border-top: 0.01rem solid #6d6d6d; }
+
+#welcome {
+  max-height: calc(100vh - 2rem); }
+
+@use 'base';
+header > h1 {
+  font-size: 1.6rem; }
+
+#welcome p {
+  padding: 2rem 4rem;
+  font-family: monospace;
+  line-height: 2rem; }
+#welcome img {
+  display: block;
+  width: 8rem;
+  margin: 0 auto; }
+
+#skills {
+  padding: 2rem; }
+  #skills h3 {
+    padding-top: 1rem; }
+  #skills a {
+    font-weight: bolder;
+    text-decoration: underline; }
+  #skills ul {
+    text-align: center; }
+    #skills ul li {
+      display: inline;
+      text-align: center; }
+      #skills ul li i {
+        display: inline-block;
+        font-size: 4rem;
+        padding: 1rem; }
+
+#portfolio {
+  padding: 2rem; }
+  #portfolio ul li {
+    margin: 1rem auto;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border-radius: 0.2rem; }
+  #portfolio ul figure a img {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 0.2rem;
+    max-width: 100%;
+    max-height: 100%; }
+  #portfolio ul figcaption {
+    text-align: center;
+    padding-top: 1rem; }
+    #portfolio ul figcaption i {
+      display: inline-block;
+      font-size: 2.4rem;
+      padding: 1rem; }
+  #portfolio ul #GSAP a > img {
+    width: 100%; }
+  #portfolio ul #GSAP figcaption p img {
+    display: inline-block;
+    height: 2.4rem;
+    margin-left: 1rem; }
+  #portfolio dl {
+    background-color: #1b1b1b;
+    border-radius: 0.2rem;
+    padding: 2rem;
+    color: #fff;
+    font-family: monospace;
+    text-align: center; }
+    #portfolio dl dd {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 2rem; }
+      #portfolio dl dd div {
+        margin: 0 0.2rem; }
+
+#about {
+  padding: 2rem;
+  text-align: center; }
+  #about h2 {
+    padding-bottom: 1rem; }
+  #about p {
+    line-height: 2.2rem; }
+  #about #cv {
+    text-decoration: underline;
+    font-weight: bolder; }
+
+footer {
+  background-color: #1b1b1b; }
+  footer h3 {
+    padding: 2rem 0 0 2rem;
+    color: #fafafa; }
+  footer ul {
+    background-color: #1b1b1b;
+    text-align: center; }
+    footer ul li {
+      display: inline; }
+      footer ul li i {
+        color: #fafafa;
+        padding: 1.6rem;
+        font-size: 2rem; }
+
+footer > a {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0.8rem;
+  padding: 1rem;
+  z-index: 10;
+  color: rgba(0, 0, 0, 0.55);
+  background: rgba(250, 250, 250, 0.1);
+  border-radius: 10rem; }
+
+@use 'base';
+#portfolio ul li:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+@use 'base';
+@use 'base';
+@media screen and (min-width: 760px) {
+  h2 {
+    padding: 2.4rem; }
+
+  header h1 {
+    font-size: 2.4rem;
+    padding: 1.4rem;
+    text-align: center;
+    cursor: none; }
+  header input {
+    display: none; }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    header nav ul li {
+      text-align: center;
+      padding-bottom: 1rem; }
+      header nav ul li a {
+        display: block;
+        height: 100%;
+        width: 100%; }
 
   #welcome {
-    display: block;
-    height: 100%;
-  }
-
-  #welcome p {
-    margin: 0 auto;
-    padding: 1rem 0 0;
-    font-size: 1.6rem;
-    line-height: 2rem;
-    text-align: center;
-  }
-
-  #welcome figure img {
-    display: block;
-    left: 0;
-    position: relative;
-    margin: 0 auto;
-    width: 8rem;
-  }
-
-  #skills {
-    text-align: center;
-    padding: 2rem;
-  }
-
-  .listTitle {
-    font-size: 1.618rem;
-    font-weight: bold;
-  }
-
-  .listTitle > a {
-    text-decoration: underline;
-  }
-
-  #skills ul {
-    padding: 0;
-    text-align: center;
-  }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0; }
+    #welcome p {
+      letter-spacing: 0.08rem;
+      font-size: 2rem;
+      line-height: 4rem;
+      font-size: 1.8rem;
+      width: 100%; }
+    #welcome img {
+      width: 16.5rem;
+      right: 10rem;
+      position: relative;
+      bottom: 0; }
 
   #skills ul li {
-    text-align: center;
-    padding: 0.944rem;
-  }
-
-  #skills ul li i {
-    font-size: 6.472rem;
-  }
-
-  #portfolio {
-    padding: 0;
-  }
-
-  #portfolio h2 {
-    padding: 2rem 2rem 0 2rem;
-  }
+    padding: 2rem; }
 
   #portfolio ul {
-    flex-direction: column;
-  }
-
-  #portfolio ul li {
-    width: auto;
-  }
-
-  #portfolio ul li figure {
-    width: 100%;
-  }
-  #portfolio ul li img {
-    filter: blur(0);
-  }
-
-  #portfolio > ul > li > #jayGallery {
-    margin-left: 0rem;
-  }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    #portfolio ul li {
+      width: 28rem; }
+  #portfolio dl {
+    margin: 1rem; }
 
   #about {
-    text-align: center;
-    padding: 2rem;
-  }
+    text-align: left; }
+    #about p {
+      letter-spacing: 0.08rem;
+      padding: 0 4rem 4rem 4rem;
+      font-size: 1.6rem;
+      line-height: 2.472rem; }
+    #about #cv {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      padding-bottom: 4rem;
+      font-size: 2rem; } }
+@use 'base';
+@media screen and (min-width: 760px) {
+  nav ul li:hover {
+    transition: 0.4s;
+    transform: scale(1.1); }
 
-  #about p {
-    text-align: center;
-    padding: 1rem;
-  }
+  nav ul li:active {
+    transition: 0.4s;
+    transform: scale(0.9); }
 
-  footer {
-    text-align: center;
-  }
+  #portfolio figure img {
+    filter: blur(0.16rem); }
 
-  footer h3 {
-    padding: 2rem 0 1rem;
-    text-align: center;
-  }
+  #portfolio figure img:hover {
+    transition: 0.4s;
+    filter: blur(0); }
 
-  footer section ul li a {
-    font-size: 4rem;
-    padding: 1rem;
-  }
+  #about > a:hover {
+    transition: 0.4s;
+    transform: scale(1.02); } }
 
-  #up,
-  #up a {
-    width: 100%;
-  }
-}
+/*# sourceMappingURL=style.css.map */

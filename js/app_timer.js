@@ -14,19 +14,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
             var d = Math.floor(s / 86400);
-            days.html("<strong>" + d + "</strong></br>J");
+            days.html("<strong>" + d + "</strong>" + "J");
             s -= d * 86400;
 
             var h = Math.floor(s / 3600);
-            hours.html("<strong>" + h + "</strong></br>H");
+            hours.html("<strong>" + h + "</strong>" + "H");
             s -= h * 3600;
 
             var m = Math.floor(s / 60);
-            minutes.html("<strong>" + m + "</strong></br>M");
+            minutes.html("<strong>" + m + "</strong>"+ "M");
             s -= m * 60;
 
             var s = Math.floor(s);
-            seconds.html("<strong>" + s + "</strong></br>S");
+            seconds.html("<strong>" + s + "</strong>" + "S");
             setTimeout(setDate);
         }
     });
