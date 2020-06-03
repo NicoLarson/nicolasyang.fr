@@ -1,0 +1,25 @@
+@media screen and (min-width: 760px) {
+  nav ul li:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
+  }
+
+  nav ul li:active {
+    transition: 0.4s;
+    transform: scale(0.9);
+  }
+
+  #portfolio figure a > img {
+    filter: blur(0.16rem);
+  }
+
+  #portfolio figure a > img:hover {
+    transition: 0.4s;
+    filter: blur(0);
+  }
+
+  #about > a:hover {
+    transition: 0.4s;
+    transform: scale(1.02);
+  }
+}
