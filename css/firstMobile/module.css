@@ -1,11 +1,10 @@
 header > h1 {
   font-size: 1.6rem;
 }
-h2{
+h2 {
   padding: 2rem;
   text-align: center;
 }
-
 #welcome p {
   padding: 2rem 4rem;
   font-family: monospace;
@@ -18,6 +17,7 @@ h2{
 }
 
 #skills {
+  height: 100%;
   padding: 2rem;
 }
 #skills h3 {
@@ -96,13 +96,47 @@ h2{
   padding: 2rem;
   text-align: center;
 }
-
 #about p {
   line-height: 2.2rem;
 }
 #about #cv {
   text-decoration: underline;
   font-weight: bolder;
+}
+
+#contact {
+  height: 100vh;
+}
+#contact form{
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#contact form p{
+  text-align: center;
+  padding-bottom: 1rem;
+}
+#contact form p input, #contact form p textarea{
+width: 90%;
+font-size: 1.4rem;
+padding: 1rem;
+border: none;
+border-bottom: 1px solid var(--color-dark);
+}
+#contact form p textarea{
+  height: 20rem;
+}
+#contact form button {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem auto 0;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  font-size: 3.2rem;
+  transition: 0.4s;
 }
 
 footer {

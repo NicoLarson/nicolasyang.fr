@@ -42,10 +42,10 @@
     <input class="burger" type="checkbox">
     <nav>
       <ul id="menu">
-        <li><a href="#skills">Compétence</a></li>
+        <li><a href="#skills">Compétences</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#about">A propos</a></li>
-        <li><a href="mailto:contact@nicolasyang.fr" target="blank">Me contacter</a></li>
+        <li><a href="mailto:contact@nicolasyang.fr">Me contacter</a></li>
       </ul>
     </nav>
   </header>
@@ -85,6 +85,8 @@
             <li><i class="devicon-sass-original"></i></li>
             <li><i class="devicon-linux-plain"></i></li>
             <li><i class="devicon-wordpress-plain"></i></li>
+            <li><i class="fab fa-raspberry-pi"></i></li>
+
           </ul>
         </li>
       </ul>
@@ -177,10 +179,26 @@
       </p>
       <a id="cv" href="./assets/pdf/nicolas_yang_cv.pdf" target="blank">A votre disposition mon Curriculum Vitae</a>
     </section>
+   <section id="contact">
+      <h2>Me contacter</h2>
+      <form action="getform.php" method="get">
+        <p>
+          <label for="name"></label>
+          <input type="text" name="name" placeholder="Nom" required>
+        </p>
+        <p>
+          <label for="email"></label>
+          <input type="email" name="email" placeholder="E-Mail" required>
+        </p>
+        <p><label for="message"></label>
+          <textarea name="message" id="message" cols="20" rows="10" placeholder="Message"></textarea>
+        </p>
+        <button type="submit" value="Envoyer"><i class="fas fa-paper-plane"></i></button>
+      </form>
+    </section>
   </main>
   <footer>
     <section>
-      <h3>Où me trouver</h3>
       <ul>
         <li>
           <a href="https://www.linkedin.com/in/nicolas-yang-dev/" target="blank"><i class="fab fa-linkedin"></i></a>
