@@ -1,0 +1,45 @@
+html {
+	scroll-behavior: smooth;
+}
+body{
+	font-size:1.6;
+	font-family: 'Source Code Pro', monospace;
+}
+* {
+box-sizing:border-box;
+}
+body,h1,h2,h3,h4,nav,section,p,ul,li,ol,dl,dt,dd,div,figure,figcaption,img{
+	margin:0;
+	padding:0;
+	font-weight:100%;
+	list-style:none;
+}
+abbr{
+	text-decoration:none;
+}
+a{
+	color:#222;
+	text-decoration:none;
+}
+/*First Mobile*/
+header>h1{
+	text-align:center;
+	background-color:${black}
+}
+nav{
+	display:inline-block;
+	height:2rem;
+	width:100%;
+}
+nav>ul{
+	overflow-x:scroll;
+}
+nav>ul>li{
+	display:inline;
+}
+nav>ul>li::before,h2::before{
+content:"<"	
+}
+nav>ul>li::after,h2::after{
+content:">"	
+}
