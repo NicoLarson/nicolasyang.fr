@@ -9,7 +9,7 @@
   <meta name="author" content="Nicolas Yang" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nicolas Yang</title>
-  <link rel="stylesheet" href="./css/style2.css">
+  <link rel="stylesheet" href="./style.css">
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,700;1,400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
@@ -22,20 +22,20 @@
 
 <body>
   <header class="menu">
-    <h1 class="title"><a href="#about">NY</a></h1>
+    <h1 class="title"><a href="#about">root@web:/home/NY</a></h1>
     <nav>
       <ul id="menu">
         <li><a href="#skills">Compétences</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#about">A propos</a></li>
-        <li><a href="mailto:contact@nicolasyang.fr">Me contacter</a></li>
+        <li><a href="mailto:contact@nicolasyang.fr">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="welcome">
-      <p id="type"></p>
+    <section>
+      <p id="type">Je suis Nicolas Yang. Etudiant en programation.</p>
       <figure>
         <img src="#" alt="Photo Nicolas Yang" />
       </figure>
@@ -43,32 +43,31 @@
     <section id="skills">
       <h2>Mes compétences</h2>
       <ul>
-        <li class="listTitle">
+        <li>
           <h3>freeCodeCamp</h3>
           <a href="https://www.freecodecamp.org/certification/nicolasyang/responsive-web-design"
             target="blank">Certificat Responsive Web Design</a>
           <ul>
-            <li><i class="devicon-html5-plain-wordmark"></i></li>
-            <li><i class="devicon-css3-plain-wordmark"></i></li>
+            <li><i class="devicon-html5-plain-wordmark"></i>HTML5</li>
+            <li><i class="devicon-css3-plain-wordmark"></i>CSS3</li>
           </ul>
         </li>
-        <li class="listTitle">
+        <li>
           <h3>BTS SIO</h3>
           <ul>
-            <li><i class="devicon-javascript-plain"></i></li>
-            <li><i class="devicon-php-plain"></i></li>
-            <li><i class="devicon-java-plain-wordmark"></i></li>
-            <li><i class="devicon-mysql-plain-wordmark"></i></li>
+            <li><i class="devicon-javascript-plain"></i>ECMAScript6</li>
+            <li><i class="devicon-php-plain"></i>PHP7</li>
+            <li><i class="devicon-java-plain-wordmark"></i>Java</li>
+            <li><i class="devicon-mysql-plain-wordmark"></i>SQL</li>
           </ul>
           <h3>Autodidacte</h3>
           <ul>
-            <li><i class="devicon-python-plain"></i></li>
-            <li><i class="devicon-ruby-plain"></i></li>
-            <li><i class="devicon-sass-original"></i></li>
-            <li><i class="devicon-linux-plain"></i></li>
-            <li><i class="devicon-vim-plain"></i></li>
+            <li><i class="devicon-python-plain"></i>Python3</li>
+            <li><i class="devicon-ruby-plain"></i>Ruby</li>
+            <li><i class="devicon-sass-original"></i>Sass</li>
+            <li><i class="devicon-linux-plain"></i>Debian</li>
+            <li><i class="devicon-vim-plain"></i>Vim</li>
             <li><i class="fab fa-raspberry-pi"></i></li>
-
           </ul>
         </li>
       </ul>
@@ -77,9 +76,10 @@
       <h2>Portfolio</h2>
       <ul>
         <li>
-          <figure id="jayGallery">
-            <a href="./portfolio/jay_gallery/index.html">
-              <img src="./assets/img/portfolio/jay_galery.jpg" alt="jay_galery">
+          <figure id="jayGallery" >
+            <a href="./portfolio/jay_gallery/index.html" class="thumbnail" data-title="Jay Gallery"
+            data-description="HTML/CSS">
+              <img src="/V2/img/jay_galery.jpg" alt="jay_galery">
             </a>
             <figcaption>
               <p>Jay Gallery <br> <i class="devicon-html5-plain-wordmark"></i><i
@@ -89,8 +89,9 @@
         </li>
         <li>
           <figure id="rockPaperScissors">
-            <a href="./portfolio/rockPaperScissors/index.html">
-              <img src="./assets/img/portfolio/rockPaperScissors.png" alt="">
+            <a href="./portfolio/rockPaperScissors/index.html" class="thumbnail" data-title="Jay Gallery"
+            data-description="HTML - CSS">
+              <img src="/V2/img/rockPaperScissors.png" alt="" >
             </a>
             <figcaption>
               <p>Pierre Feuille Ciseaux <br> <i class="devicon-html5-plain-wordmark"></i><i
@@ -100,8 +101,9 @@
         </li>
         <li>
           <figure id="toDoList">
-            <a href="./portfolio/toDoList/index.html">
-              <img src="./assets/img/portfolio/toDoList.png" alt="">
+            <a href="./portfolio/toDoList/index.html" class="thumbnail" data-title="ToDo List"
+            data-description="HTML - CSS - JavaScript">
+              <img src="/V2/img/toDoList.png" alt="">
             </a>
             <figcaption>
               <p>ToDo List<br> <i class="devicon-html5-plain-wordmark"></i><i class="devicon-css3-plain-wordmark"></i><i
@@ -111,8 +113,9 @@
         </li>
         <li>
           <figure id="GSAP">
-            <a href="./portfolio/bikeWheelChartsGSAP/index.html">
-              <img src="./assets/img/portfolio/gsap.png" alt="">
+            <a href="./portfolio/bikeWheelChartsGSAP/index.html" class="thumbnail" data-title="Annimation avec GSAP"
+            data-description="HTML - CSS - JavaScript - Framework GSAP">
+              <img src="/V2/img/gsap.png" alt="">
             </a>
             <figcaption>
               <p>SVG - GSAP<br><i class="devicon-html5-plain-wordmark"></i><i class="devicon-javascript-plain"></i><img
@@ -123,8 +126,9 @@
         </li>
         <li>
           <figure id="aymelineYangPortFolio">
-            <a href="https://aymelineyang.fr/">
-              <img src="./assets/img/portfolio/aymelineYang.png" alt="">
+            <a href="https://aymelineyang.fr/" class="thumbnail" data-title="aymelineyang.fr"
+            data-description="HTML CSS">
+              <img src="/V2/img/aymelineYang.png" alt="site AymelineYang">
             </a>
             <figcaption>
               <p>aymelineyang.fr<br> <i class="devicon-html5-plain-wordmark"></i><i

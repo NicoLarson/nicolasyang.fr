@@ -24,7 +24,8 @@ a{
 /*First Mobile*/
 header>h1{
 	text-align:center;
-	background-color:${black}
+	background-color:${black};
+color:green;
 }
 nav{
 	display:inline-block;
@@ -38,8 +39,8 @@ nav>ul>li{
 	display:inline;
 }
 nav>ul>li::before,h2::before{
-content:"<"	
+content:"<";	
 }
 nav>ul>li::after,h2::after{
-content:">"	
+content:">";	
 }
