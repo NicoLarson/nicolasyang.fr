@@ -40,72 +40,104 @@ a {
 }
 :root {
   --color-dark: #000;
+  --color-dark-light: #000;
+  --color-grey: #555555;
   --color-light: #fff;
   --color-blue: blue;
   --color-red: red;
   --color-green: #55ff55;
+  --color-black-transparent: rgba(0, 0, 0, 0.5);
 }
 /**First Mobile*/
-/* Welcome page */
-header > h1 {
-  text-align: center;
-}
-header > h1 > a {
-  font-size: 4rem;
-  color: var(--color-light);
-}
-header > nav {
-  display: none;
-}
-main,
-header {
+body {
   background-color: var(--color-dark);
   height: 100vh;
 }
-p {
+
+#welcome p {
+  font-size:1.4rem ;
   padding: 2rem;
   color: var(--color-green);
 }
-#welcome > ul {
-  display: grid;
+#welcome ul{
+  width: 100vw;
+  display: flex;
+justify-content: space-around;
+  position:fixed;
+  bottom: 4rem;
 }
-#welcome > ul > li:nth-child(1) {
-  grid-column: 1 / 2;
-  grid-row: 1;
+#red-pill {
   background-color: var(--color-red);
 }
-#welcome > ul > li:nth-child(2) {
-  grid-column: 1 / 2;
-  grid-row: 2;
-}
-#welcome > ul > li:nth-child(3) {
-  grid-column: 2 / 2;
-  grid-row: 1;
+#blue-pill{
   background-color: var(--color-blue);
 }
-#welcome > ul > li:nth-child(4) {
-  grid-column: 2 / 2;
-  grid-row: 2;
-}
-#welcome > ul > li:nth-child(1),
-#welcome > ul > li:nth-child(3) {
+#red-pill,
+#blue-pill{
   width: 2rem;
   height: 5rem;
   margin: 1rem auto;
   border-radius: 500px;
   transform: rotate(45deg);
   border: solid 0.1rem var(--color-light);
+  cursor: pointer;
 }
-#welcome > ul > li:nth-child(2),
-#welcome > ul > li:nth-child(4) {
-  color: #fff;
+#red-pill:hover,
+#blue-pill:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+#red-pill:active,
+#blue-pill:active{
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.disapear{
+  display: none;
+}
+
+header > h1 {
   text-align: center;
-  padding:1rem;
+  font-weight: lighter;
 }
-/**First Laptop*/
-#welcome{
-  height: 80vh;
+header > h1 > a {
+  font-size: 1.6rem;
+  color: var(--color-green);
+}
+header > h1 > a::before {
+  content: "root@web:/home/";
+}
+header > h1 > a::after {
+  content: "#";
+}
+header {
+  display: block;
+  margin: auto;
+}
+header > nav {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+#menu {
+  height: 10vh;
   display: flex;
+  list-style: none;
   align-items: center;
-  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+#menu li {
+  flex-shrink: 0;
+  max-width: 100%;
+}
+#menu li a {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  padding: 0 0.8rem;
+  color: var(--color-green);
+}
+#menu li > a::before,
+h2::before {
+  content: "/";
 }
