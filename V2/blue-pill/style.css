@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "MrRobot";
+  src: url("./assets/MR\ ROBOT.ttf") format("truetype");
+}
 html {
   scroll-behavior: smooth;
 }
@@ -43,24 +47,24 @@ a {
   --color-dark: #000;
   --color-dark-light: #000;
   --color-grey: #555555;
-  --color-light: #fff;
+  --color-light: #fafafa;
   --color-blue: blue;
-  --color-red: red;
+  --color-red: rgb(255, 0, 0);
   --color-green: #55ff55;
   --color-black-transparent: rgba(0, 0, 0, 0.5);
   --color-yellow: #fdbb2d;
   --color-blueSky: #22c1c3;
 }
 /* First Mobile */
-h2 {
 
+h2 {
   font-size: 2rem;
   padding: 2rem;
 }
 /* Menu Burger */
 .burger {
   position: absolute;
-  top: 2rem;
+  top: 1.5rem;
   right: 1rem;
   display: inline-block;
   border: 0;
@@ -131,9 +135,14 @@ header nav ul li {
 
 header > h1 {
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
+  font-family: "MrRobot";
+  font-size: 2rem;
+  font-weight: normal;
 }
-
+header h1 a {
+  color: var(--color-red);
+}
 /* Section Hello */
 main > section:first-child p {
   color: var(--color-light);
@@ -142,6 +151,10 @@ main > section:first-child p {
 }
 
 /* Skills */
+#skills {
+  color: var(--color-light);
+  padding-bottom: 4rem;
+}
 #skills h3 {
   text-align: center;
   font-size: 1.6rem;
@@ -151,6 +164,7 @@ main > section:first-child p {
   padding-top: 0;
 }
 #skills ul li a {
+  color: var(--color-light);
   font-size: 1.4rem;
   font-weight: bolder;
   text-decoration: underline;
@@ -171,8 +185,8 @@ main > section:first-child p {
   padding: 1rem;
 }
 /* Portfolio */
-#portfolio{
-    color: var(--color-light);
+#portfolio {
+  color: var(--color-light);
 }
 #portfolio img {
   width: 100%;
@@ -186,14 +200,17 @@ main > section:first-child p {
   font-size: 4rem;
   padding: 1rem;
 }
-#portfolio figure{
-    padding-bottom: 4rem;
+#portfolio figure {
+  padding-bottom: 4rem;
 }
 
 /* About */
-
+#about h2 {
+  color: var(--color-light);
+}
 #about p {
   padding: 0 2rem;
+  color: var(--color-light);
 }
 #about a {
   color: var(--color-light);
@@ -227,8 +244,6 @@ footer > a {
   z-index: 10;
 }
 
-/******************************************************/
-
 #hello {
   height: 90vh;
 }
@@ -237,7 +252,7 @@ footer > a {
   background: url(./assets/Texture-Wallpaper-35719.jpg) no-repeat fixed;
 }
 #skills {
-  background: url(./assets/nciGpUE.jpg) center 0 no-repeat fixed;
+  background: url(./assets/nciGpUE.jpg) fixed;
 }
 #portfolio {
   background: url(./assets/Texture-Wallpaper-35719.jpg) no-repeat fixed;
@@ -245,4 +260,73 @@ footer > a {
 
 #about {
   background: url(./assets/Texture-Wallpaper-35719.jpg) center 0 no-repeat fixed;
+}
+
+@media screen and (min-width: 600px) {
+  header h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+    padding: 4rem;
+  }
+  .burger {
+    display: none;
+  }
+  .navigation {
+    max-height: 100%;
+  }
+  #menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  #menu li {
+    padding: 0 1rem 2rem;
+  }
+  #menu li a {
+    font-size: 2rem;
+
+  }
+  /* welcome */
+  #hello p {
+    font-size: 3rem;
+    padding: 4rem;
+  }
+  /* skills */
+  #skills {
+    height: 100vh;
+  }
+  #skills h2 {
+    padding: 4rem;
+  }
+  #skills p {
+    padding-top: 2rem;
+    text-align: center;
+  }
+  #skills h3 {
+    font-size: 2.6rem;
+  }
+  #skills i {
+    font-size: 6rem;
+  }
+  /* portfolio */
+  #portfolio ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  #portfolio figure {
+    width: 38rem;
+    padding: 0 2rem 4rem;
+  }
+  /* about */
+  #about p {
+    padding: 0 4rem 0;
+    font-size: 2rem;
+  }
+  #about a {
+    font-size: 2rem;
+  }
 }
