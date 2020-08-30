@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Matrix";
+  src: url("../assets/font/matrix.ttf") format("truetype");
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -63,7 +68,6 @@ a {
 /*Header*/
 header > h1 {
   text-align: center;
-  font-weight: lighter;
 }
 header > h1 > a {
   font-size: 1.6rem;
@@ -232,7 +236,6 @@ main > section > figure {
 footer {
   margin-top: 2rem;
   border-top: solid 0.1rem var(--color-green);
-
 }
 footer p {
   padding: 1rem;
@@ -270,11 +273,10 @@ footer i {
     font-size: 1.8rem;
     padding: 4rem;
   }
-  header h1{
-    font-weight: bolder;
-  }
   header h1 a {
+    font-family: "Matrix";
     font-size: 4rem;
+    font-weight: lighter;
     color: var(--color-light);
   }
   header > h1 > a::before,
@@ -291,7 +293,7 @@ footer i {
   nav ul li a {
     font-size: 2rem;
   }
-  #menu{
+  #menu {
     flex-wrap: wrap;
   }
   /* Welcome */
@@ -300,12 +302,12 @@ footer i {
   #skills h3 {
     font-size: 2.2rem;
   }
-  #skills li{
+  #skills li {
     font-size: 2rem;
-    padding:1rem
+    padding: 1rem;
   }
   /* Portfolio */
-  #portfolio>ul{
+  #portfolio > ul {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -313,10 +315,10 @@ footer i {
   #portfolio > ul > li:first-child {
     padding-top: 2rem;
   }
-  #portfolio>ul>li{
+  #portfolio > ul > li {
     padding: 2rem;
   }
-  #portfolio img{
+  #portfolio img {
     width: 28rem;
     height: 28rem;
   }
@@ -334,13 +336,13 @@ footer i {
     font-size: 1.6rem;
     padding: 0 4rem;
   }
-  #about a{
+  #about a {
     font-size: 1.8rem;
     padding-bottom: 2rem;
   }
 
   /* Footer */
-  footer{
+  footer {
     font-size: 1.2rem;
     padding: 1rem 0 3rem;
   }

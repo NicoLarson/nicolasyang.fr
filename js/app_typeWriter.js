@@ -1,9 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    var app = document.getElementById('type');
-    var typewriter = new Typewriter(app);
-    
-    typewriter.typeString('Bonjour! <br> Je suis étudiant en programmation.')
-    .start();
- 
+    let welcome = document.querySelector('#type');
+    let welcomeWriter = new Typewriter(welcome, {
+        delay: 50
+    });
+    welcomeWriter
+        .typeString(`Bonjour ... <br>
+        Je suis Nicolas Yang. <br>Etudiant en programation.<br>
+        <br>
+        Bienvenu dans mon portfolio. <br>
+            &darr;<br>
+            &darr;<br>
+            &darr;`)
+        .start()
+
 })

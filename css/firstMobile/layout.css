@@ -1,8 +1,0 @@
-section {
-    max-height: 100%;
-    max-width: 100%;
-    border-top: 0.01rem solid var(--color-white-secondary); }
-  
-  #welcome {
-    max-height: calc(100vh - 2rem); }
-  
