@@ -109,7 +109,6 @@ h2::before {
 /*****/
 main > section:first-child {
   height: 90vh;
-  border-top: solid 0.1rem var(--color-green);
 }
 main > section:first-child > p {
   padding: 1rem;
@@ -292,8 +291,10 @@ footer i {
   nav ul li a {
     font-size: 2rem;
   }
+  #menu{
+    flex-wrap: wrap;
+  }
   /* Welcome */
- 
 
   /* Skills */
   #skills h3 {

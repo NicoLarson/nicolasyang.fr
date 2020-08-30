@@ -1,6 +1,6 @@
 @font-face {
   font-family: "MrRobot";
-  src: url("./assets/MR\ ROBOT.ttf") format("truetype");
+  src: url("../assets/MR\ ROBOT.ttf") format("truetype");
 }
 html {
   scroll-behavior: smooth;
@@ -249,17 +249,17 @@ footer > a {
 }
 
 #hello {
-  background: url(./assets/Texture-Wallpaper-35719.jpg) no-repeat fixed;
+  background: url(../assets/img/Texture-Wallpaper-35719.jpg) no-repeat fixed;
 }
 #skills {
-  background: url(./assets/nciGpUE.jpg) fixed;
+  background: url(../assets/img/nciGpUE.jpg) fixed;
 }
 #portfolio {
-  background: url(./assets/Texture-Wallpaper-35719.jpg) no-repeat fixed;
+  background: url(../assets/img/Texture-Wallpaper-35719.jpg) no-repeat fixed;
 }
 
 #about {
-  background: url(./assets/Texture-Wallpaper-35719.jpg) center 0 no-repeat fixed;
+  background: url(../assets/img/Texture-Wallpaper-35719.jpg) center 0 no-repeat fixed;
 }
 
 @media screen and (min-width: 600px) {
