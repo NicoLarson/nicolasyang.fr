@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  
+
     let welcome = document.querySelector('#welcome p')
     let welcomeWriter = new Typewriter(welcome, {
         delay: 50
@@ -11,14 +11,5 @@ document.addEventListener("DOMContentLoaded", () => {
         Take the blue pill. The story ends. You wake up in your bed and believe whatever you want to
                     believe.`)
         .start()
-
-
-        let header = document.querySelector('header')
-        let secWelcome = document.querySelector('#welcome')
-let redPill = document.querySelector('#red-pill')
-redPill.addEventListener('click',()=>{
-header.classList.remove('disapear')
-secWelcome.classList.add('disapear')
-})
 
 })

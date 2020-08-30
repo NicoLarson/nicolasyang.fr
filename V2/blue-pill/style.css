@@ -1,0 +1,248 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.6;
+  font-family: "Spartan", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+nav,
+section,
+p,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+div,
+figure,
+figcaption,
+img {
+  margin: 0;
+  padding: 0;
+  font-weight: 100%;
+  list-style: none;
+}
+abbr {
+  text-decoration: none;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+:root {
+  --color-dark: #000;
+  --color-dark-light: #000;
+  --color-grey: #555555;
+  --color-light: #fff;
+  --color-blue: blue;
+  --color-red: red;
+  --color-green: #55ff55;
+  --color-black-transparent: rgba(0, 0, 0, 0.5);
+  --color-yellow: #fdbb2d;
+  --color-blueSky: #22c1c3;
+}
+/* First Mobile */
+h2 {
+
+  font-size: 2rem;
+  padding: 2rem;
+}
+/* Menu Burger */
+.burger {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  display: inline-block;
+  border: 0;
+  background: none;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+  border-bottom: 4px solid currentColor;
+  width: 28px;
+  transition: border-bottom 1s ease-in-out;
+}
+.burger::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.burger:before {
+  content: "";
+  display: block;
+  border-bottom: 4px solid currentColor;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: transform 0.5s ease-in-out;
+}
+.burger:after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid currentColor;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.burger-check {
+  display: none;
+}
+
+.burger-check:checked ~ .burger {
+  border-bottom: 4px solid transparent;
+  transition: border-bottom 0.8s ease-in-out;
+}
+.burger-check:checked ~ .burger:before {
+  transform: rotate(-405deg) translateY(1px) translateX(-3px);
+  transition: transform 0.5s ease-in-out;
+}
+.burger-check:checked ~ .burger:after {
+  transform: rotate(405deg) translateY(-4px) translateX(-5px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.navigation {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.burger-check:checked ~ .navigation {
+  max-height: 500px;
+  transition: max-height 0.5s ease-in-out;
+}
+header nav ul {
+  text-align: center;
+}
+header nav ul li {
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+/* Header */
+
+header > h1 {
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Section Hello */
+main > section:first-child p {
+  color: var(--color-light);
+  font-size: 2rem;
+  padding: 4rem 2rem;
+}
+
+/* Skills */
+#skills h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  padding-top: 2rem;
+}
+#skills > ul > li:first-child > h3 {
+  padding-top: 0;
+}
+#skills ul li a {
+  font-size: 1.4rem;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+#skills > ul > li:first-child {
+  text-align: center;
+}
+#skills > ul > li > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#skills i {
+  font-size: 4rem;
+}
+#skills ul li ul li {
+  padding: 1rem;
+}
+/* Portfolio */
+#portfolio{
+    color: var(--color-light);
+}
+#portfolio img {
+  width: 100%;
+}
+#portfolio figcaption p {
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+#portfolio figcaption i {
+  font-size: 4rem;
+  padding: 1rem;
+}
+#portfolio figure{
+    padding-bottom: 4rem;
+}
+
+/* About */
+
+#about p {
+  padding: 0 2rem;
+}
+#about a {
+  color: var(--color-light);
+}
+#about > a {
+  display: block;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 2rem;
+}
+/* Footer */
+footer {
+  padding: 2rem;
+}
+footer i {
+  font-size: 2rem;
+  color: var(--color-dark-light);
+}
+
+footer section ul {
+  display: flex;
+  justify-content: space-around;
+}
+footer > a {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 2rem;
+  font-size: 1.4rem;
+  z-index: 10;
+}
+
+/******************************************************/
+
+#hello {
+  height: 90vh;
+}
+
+#hello {
+  background: url(./assets/Texture-Wallpaper-35719.jpg) no-repeat fixed;
+}
+#skills {
+  background: url(./assets/nciGpUE.jpg) center 0 no-repeat fixed;
+}
+#portfolio {
+  background: url(./assets/Texture-Wallpaper-35719.jpg) no-repeat fixed;
+}
+
+#about {
+  background: url(./assets/Texture-Wallpaper-35719.jpg) center 0 no-repeat fixed;
+}

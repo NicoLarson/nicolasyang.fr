@@ -7,6 +7,7 @@ body {
 }
 * {
   box-sizing: border-box;
+  outline: none;
 }
 body,
 h1,
@@ -48,10 +49,16 @@ a {
   --color-green: #55ff55;
   --color-black-transparent: rgba(0, 0, 0, 0.5);
 }
-/**First Mobile*/
-body {
-  background-color: var(--color-dark);
-  height: 100vh;
+h2 {
+  border-top: solid 0.01rem var(--color-green);
+  padding: 2rem;
+}
+
+/*First Mobile*/
+body,
+a {
+  background-color: var(--color-dark-light);
+  color: var(--color-green);
 }
 
 #welcome p {
@@ -91,9 +98,6 @@ justify-content: space-around;
 #blue-pill:active{
   transform: scale(0.9);
   transition: 0.5s;
-}
-.disapear{
-  display: none;
 }
 
 header > h1 {
