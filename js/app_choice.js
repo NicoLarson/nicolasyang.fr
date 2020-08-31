@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let message = document.querySelector('#welcome p')
     let messageWriter = new Typewriter(message, {
-        delay: 50
+        delay: 25
     })
     if (screen.width < 350) {
         message.style.cssText = 'font-size: 1rem; padding: 1rem;'

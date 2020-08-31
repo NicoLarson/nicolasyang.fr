@@ -9,7 +9,6 @@ html {
 body {
   font-size: 1.6;
   font-family: "Inconsolata", monospace;
-  
 }
 * {
   box-sizing: border-box;
@@ -113,20 +112,18 @@ h2::before {
 /*Welcome**/
 main > section:first-child {
   height: 90vh;
-  border-top: solid .01rem var(--color-green);
+  border-top: solid 0.01rem var(--color-green);
 }
 main > section:first-child > p {
   padding: 1rem;
   text-shadow: 0 0 0 transparent, 0 0 1rem var(--color-green);
-
 }
 main > section > figure {
   display: none;
 }
 /*Skills*/
-#skills{
+#skills {
   text-shadow: 0 0 0 transparent, 0 0 1rem var(--color-green);
-
 }
 #skills > ul > li > ul {
   display: flex;
@@ -138,7 +135,6 @@ main > section > figure {
   font-size: 1.4rem;
   padding: 0 1rem;
   text-shadow: 0 0 0 transparent, 0 0 1rem var(--color-green);
-
 }
 #skills li:last-child {
   padding-bottom: 2rem;
@@ -162,19 +158,16 @@ main > section > figure {
   display: block;
   text-align: center;
   text-decoration: underline;
-    text-shadow: 0 0 0 transparent, 0 0 1rem var(--color-green);
-
+  text-shadow: 0 0 0 transparent, 0 0 1rem var(--color-green);
 }
 
 /*Portfolio*/
-#portfolio h2{
+#portfolio h2 {
   text-shadow: 0 0 0 transparent, 0 0 1rem var(--color-green);
-
 }
 #portfolio img {
   width: 100vw;
   border-radius: 0.2rem;
-
 }
 #portfolio figcaption {
   display: none;
@@ -218,7 +211,6 @@ main > section > figure {
   color: #fff;
 }
 .thumbnail::after {
-  content: attr(data-title);
   top: 0;
   background: rgba(0, 0, 0, 0.4);
   text-align: center;
@@ -241,7 +233,8 @@ main > section > figure {
 }
 
 /*About*/
-#vi {
+#vi,
+#about ul {
   margin: 0 auto;
   width: 90%;
   background: #121212;
@@ -253,23 +246,57 @@ main > section > figure {
 }
 #vi ol {
   grid-column: 1;
-  padding: .2rem 0.4rem ;
+  padding: 0.2rem 0.4rem;
 }
 #vi li {
-  color: #AAAAAA;
+  color: #aaaaaa;
   text-align: end;
 }
-#about h2{
+#about ul {
+  display: flex;
+}
+#about ul li {
+  font-size: 1rem;
+  padding: 0.1rem 0.8rem;
+}
+#about ul li:nth-child(1) {
+  background-color: yellow;
+  color: #121212;
+  font-weight: bolder;
+}
+#about ul li:nth-child(2) {
+  flex: 100%;
+  background-color: rgb(131, 39, 131);
+  color: #fff;
+}
+#about ul li:nth-child(3) {
+  display: none;
+  background-color: var(--color-dark-light);
+  color: var(--color-green);
+}
+#about ul li:nth-child(4) {
+  display: none;
+
+  background-color: #101010;
+  color: grey;
+}
+#about ul li:nth-child(5) {
+  display: none;
+
+  background-color: yellow;
+  color: #121212;
+}
+#about h2 {
   text-shadow: 0 0 0 transparent, 0 0 1rem var(--color-green);
 }
 
 #about p {
-  color: #AAAAAA;
+  color: #aaaaaa;
   grid-column: 2;
-  padding: .2rem .1rem 0;
+  padding: 0.2rem 0.1rem 0;
 }
-#about p a{
-  color: #AAAAAA;
+#about p a {
+  color: #aaaaaa;
   background-color: #121212;
 }
 #about > a {
@@ -277,7 +304,7 @@ main > section > figure {
   display: block;
   text-align: center;
   text-decoration: underline;
-  padding-top: 2rem;
+  padding: 2rem 1rem 0;
 }
 /*Footer*/
 footer {
@@ -312,7 +339,7 @@ footer i {
   display: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   h2 {
     font-size: 2.8rem;
     font-weight: lighter;
@@ -369,6 +396,7 @@ footer i {
     height: 28rem;
   }
   .thumbnail::after {
+    content: attr(data-title);
     transform: translateY(-100%) scale(0.8);
     font-size: 2.8rem;
   }
@@ -378,10 +406,33 @@ footer i {
     font-size: 1.6rem;
   }
   /* About */
- #about ol{
-   display: none;
- }
-
+  #about ol {
+    display: none;
+  }
+  #about p {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    padding: 0.6rem;
+  }
+  #about > a {
+    font-size: 2rem;
+    padding: 4rem 2rem 2rem;
+  }
+  #about span {
+    font-size: 2.5rem;
+  }
+  #about ul li:nth-child(2) {
+    flex-basis: 10%;
+  }
+  #about ul li:nth-child(3) {
+    display: inline;
+  }
+  #about ul li:nth-child(4) {
+    display: inline;
+  }
+  #about ul li:nth-child(5) {
+    display: inline;
+  }
   /* Footer */
   footer {
     font-size: 1.2rem;

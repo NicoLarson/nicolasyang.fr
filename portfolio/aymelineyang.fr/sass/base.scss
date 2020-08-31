@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "CenturyGothic";
+  src: url(../assets/font/CenturyGothic.ttf);
+}
+@font-face {
+  font-family: "Satturday Collection";
+  src: url("../assets/font/Satturday\ Collection.ttf");
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "CenturyGothic", sans-serif;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+nav,
+section,
+hr,
+p,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+div,
+figure,
+figcaption,
+img {
+  margin: 0;
+  padding: 0;
+  font-weight: 100%;
+  list-style: none;
+}
+abbr {
+  text-decoration: none;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: "Satturday Collection";
+}
+h2{
+  font-size: 2.8rem;
+}
+img {
+  display: none;
+}
+
+$color-primary: #85a392;
+$color-secondary: #ffecc7;
+$color-secondaryDark: #fdd998;
+$color-secondaryDarker: #f5b971;
+
+@import 'style';
+@import 'menuBurger';

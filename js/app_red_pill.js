@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     welcomeWriter
         .typeString(`Bonjour... <br>
-        Je suis Nicolas Yang. <br>Etudiant en programation.<br>
+        Je suis Nicolas Yang. <br>Etudiant en programmation.<br>
         <br>
-        Bienvenu dans mon portfolio. <br>
+        Bienvenue dans mon portfolio. <br>
             &darr;<br>
             &darr;<br>
             &darr;`)
@@ -17,12 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
     let numVi = document.querySelector("#numVi > ol")
     let viLength = 20
     if(document.body.clientWidth <= 320){
-        viLength = 51
+        viLength = 52
     }else if(document.body.clientWidth <= 360){
-        viLength = 43
+        viLength = 44
     }else if(document.body.clientWidth <= 375){
-        viLength = 42
-    }else if(document.body.clientWidth <= 400){
+        viLength = 43
+    }else if(document.body.clientWidth <= 414){
         viLength = 37
     }else if(document.body.clientWidth <= 450){
         viLength = 33
@@ -39,4 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
         numVi.innerHTML += `<li>${i+1}</li>`
     }
 
+    let cursorAbout = document.querySelector("#about span")
+    let aboutWriter = new Typewriter(cursorAbout, {
+        delay: 50
+    });
 })

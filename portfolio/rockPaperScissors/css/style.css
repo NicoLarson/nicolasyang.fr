@@ -56,7 +56,9 @@ table {
   text-align: center;
 }
 
-thead tr td:first-child > i{
+thead tr td:first-child{
+  text-transform: uppercase;
+  font-weight: bolder;
   color: #2c3e50;
 }
 thead tr td:nth-child(3) > i{
