@@ -65,13 +65,14 @@ a {
   font-size:1.4rem ;
   padding: 2rem;
   color: var(--color-green);
+  text-shadow: 0 0 0 transparent, 0 0 10px var(--color-green), 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #ff003c, 0 0 100px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c, 0 0 1000px #ff003c;
 }
 #welcome ul{
   width: 100vw;
   display: flex;
 justify-content: space-around;
   position:fixed;
-  bottom: 4rem;
+  bottom: 2rem;
 }
 #red-pill {
   background-color: var(--color-red);
@@ -144,4 +145,13 @@ header > nav {
 #menu li > a::before,
 h2::before {
   content: "/";
+}
+@media screen and (min-width: 600px) {
+#welcome p{
+  padding: 4rem;
+}
+#welcome ul{
+  bottom: 8rem
+}
+
 }

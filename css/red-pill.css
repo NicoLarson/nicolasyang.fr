@@ -158,6 +158,8 @@ main > section > figure {
 /*Portfolio*/
 #portfolio img {
   width: 100vw;
+  border-radius: 0.2rem;
+
 }
 #portfolio figcaption {
   display: none;
