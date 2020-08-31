@@ -65,8 +65,7 @@ a {
   font-size:1.4rem ;
   padding: 2rem;
   color: var(--color-green);
-  text-shadow: 0 0 0 transparent, 0 0 10px var(--color-green), 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #ff003c, 0 0 100px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c, 0 0 1000px #ff003c;
-}
+  text-shadow: 0 0 0 transparent, 0 0 1rem var(--color-green);}
 #welcome ul{
   width: 100vw;
   display: flex;
@@ -84,7 +83,7 @@ justify-content: space-around;
 #blue-pill{
   width: 2rem;
   height: 5rem;
-  margin: 1rem auto;
+  margin: 0 auto;
   border-radius: 500px;
   transform: rotate(45deg);
   border: solid 0.1rem var(--color-light);

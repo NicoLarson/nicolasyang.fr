@@ -8,7 +8,8 @@ html {
 }
 body {
   font-size: 1.6;
-  font-family: "Source Code Pro", monospace;
+  font-family: "Inconsolata", monospace;
+  
 }
 * {
   box-sizing: border-box;
@@ -54,6 +55,7 @@ a {
   --color-green: #55ff55;
   --color-black-transparent: rgba(0, 0, 0, 0.5);
 }
+
 h2 {
   border-top: solid 0.01rem var(--color-green);
   padding: 2rem;
@@ -76,9 +78,6 @@ header > h1 > a {
 header > h1 > a::before {
   content: "root@web:/home/";
 }
-header > h1 > a::after {
-  content: "#";
-}
 header {
   display: block;
   margin: auto;
@@ -86,6 +85,7 @@ header {
 header > nav {
   overflow-x: scroll;
   overflow-y: hidden;
+  text-shadow: 0 0 0 transparent, 0 0 1rem var(--color-green);
 }
 #menu {
   height: 10vh;
@@ -110,17 +110,24 @@ header > nav {
 h2::before {
   content: "/";
 }
-/*****/
+/*Welcome**/
 main > section:first-child {
   height: 90vh;
+  border-top: solid .01rem var(--color-green);
 }
 main > section:first-child > p {
   padding: 1rem;
+  text-shadow: 0 0 0 transparent, 0 0 1rem var(--color-green);
+
 }
 main > section > figure {
   display: none;
 }
 /*Skills*/
+#skills{
+  text-shadow: 0 0 0 transparent, 0 0 1rem var(--color-green);
+
+}
 #skills > ul > li > ul {
   display: flex;
   flex-direction: row;
@@ -130,6 +137,8 @@ main > section > figure {
 #skills li {
   font-size: 1.4rem;
   padding: 0 1rem;
+  text-shadow: 0 0 0 transparent, 0 0 1rem var(--color-green);
+
 }
 #skills li:last-child {
   padding-bottom: 2rem;
@@ -153,9 +162,15 @@ main > section > figure {
   display: block;
   text-align: center;
   text-decoration: underline;
+    text-shadow: 0 0 0 transparent, 0 0 1rem var(--color-green);
+
 }
 
 /*Portfolio*/
+#portfolio h2{
+  text-shadow: 0 0 0 transparent, 0 0 1rem var(--color-green);
+
+}
 #portfolio img {
   width: 100vw;
   border-radius: 0.2rem;
@@ -226,16 +241,47 @@ main > section > figure {
 }
 
 /*About*/
+#vi {
+  margin: 0 auto;
+  width: 90%;
+  background: #121212;
+  display: grid;
+}
+#numVi {
+  margin: 0 auto;
+  background-color: #303030;
+}
+#vi ol {
+  grid-column: 1;
+  padding: .2rem 0.4rem ;
+}
+#vi li {
+  color: #AAAAAA;
+  text-align: end;
+}
+#about h2{
+  text-shadow: 0 0 0 transparent, 0 0 1rem var(--color-green);
+}
+
 #about p {
-  padding: 0 1rem 1rem 1rem;
+  color: #AAAAAA;
+  grid-column: 2;
+  padding: .2rem .1rem 0;
+}
+#about p a{
+  color: #AAAAAA;
+  background-color: #121212;
 }
 #about > a {
+  text-shadow: 0 0 0 transparent, 0 0 1rem var(--color-green);
   display: block;
   text-align: center;
   text-decoration: underline;
+  padding-top: 2rem;
 }
 /*Footer*/
 footer {
+  text-shadow: 0 0 0 transparent, 0 0 1rem var(--color-green);
   margin-top: 2rem;
   border-top: solid 0.1rem var(--color-green);
 }
@@ -276,10 +322,8 @@ footer i {
     padding: 4rem;
   }
   header h1 a {
-    font-family: "Matrix";
     font-size: 4rem;
-    font-weight: lighter;
-    color: var(--color-light);
+    font-weight: bolder;
   }
   header > h1 > a::before,
   header > h1 > a::after {
@@ -334,14 +378,9 @@ footer i {
     font-size: 1.6rem;
   }
   /* About */
-  #about p {
-    font-size: 1.6rem;
-    padding: 0 4rem;
-  }
-  #about a {
-    font-size: 1.8rem;
-    padding-bottom: 2rem;
-  }
+ #about ol{
+   display: none;
+ }
 
   /* Footer */
   footer {
