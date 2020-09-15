@@ -260,18 +260,19 @@ footer > a {
 }
 
 #hello {
-  background: url(../assets/img/background/blue-red.jpg) no-repeat fixed;
+  background: url(../assets/img/background/keyboard__minimal_orange.png) no-repeat fixed;
 }
 #skills {
-  background: url(../assets/img/background/yellow-red.jpg)  fixed;
+  background: url(../assets/img/background/keyboard_mac.jpg)  fixed;
 }
 #portfolio {
-  background:url(../assets/img/background/blue-red.jpg)center 0 no-repeat fixed;
+  background:url(../assets/img/background/keyboard_neon.jpg)center 0 no-repeat fixed;
 
 }
 
 #about {
-  background: url(../assets/img/background/happyWall.jpg) center no-repeat fixed;
+  /* background: url(../assets/img/background/keyboard_old.png) center no-repeat fixed; */
+  background-color: #111;
 
 }
 
@@ -374,4 +375,4 @@ footer > a {
   #about a {
     font-size: 2rem;
   }
-}
+
